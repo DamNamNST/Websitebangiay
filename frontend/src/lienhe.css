@@ -685,9 +685,6 @@ html {
 
 }
 
-
-
-
 @media screen and (min-width:850px){
   :first-child.col .col-inner {
     margin-left: auto;
