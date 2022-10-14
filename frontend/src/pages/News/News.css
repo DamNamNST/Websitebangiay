@@ -14,7 +14,7 @@
     @apply  outline-none
 }
 .inp__search button{
-   @apply bg-red-700 text-white
+   @apply bg-red-600 text-white
 }
 
 .news__post{

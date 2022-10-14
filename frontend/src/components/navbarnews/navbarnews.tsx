@@ -10,7 +10,7 @@ const NavBarNews = () => {
             </div>
             <div className="news__post">
                 <h2 className="title__news">
-                    BÀI VIẾT MỚI
+                    BÀI VIẾT MỚI 
                 </h2>
                 <div className="list__news">
                     <div className="item__list">
