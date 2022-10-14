@@ -2,7 +2,8 @@ import React from 'react'
 import '../lienhe.css'
 type Props = {}
 const Lienhe = (props: Props) => {
-  return (<>
+  return (
+  <>
     <div className="row" style={{ backgroundColor: "white" }}>
       <div className="col medium-6 small-12 large-6" data-animate="fadeInLeft" data-animated="true">
         <div className="col-inner">
@@ -123,14 +124,12 @@ const Lienhe = (props: Props) => {
         </div>
       </div>
     </div>
-<<<<<<< HEAD
                 <div className="col small-12 large-12">
                   <div className="col-inner" style={{ margin: '0px 0px -25px' }}>
                     <p><iframe width="100%" height={400} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4478791335196!2d106.65261921472937!3d10.77696826213081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752ed189fa855d%3A0xf63e15bfce46baef!2sC%C3%B4ng+ty+TNHH+-+MONA+MEDIA!5e0!3m2!1svi!2s!4v1524639789314" frameBorder={0} allowFullScreen style={{ border: '0px currentColor', borderImage: 'none' }} /></p>
                   </div>
                 </div>
 
-=======
     <div>
 
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.863981044336!2d105.7445984148835!3d21.038127785993215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b991d80fd5%3A0x53cefc99d6b0bf6f!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1665301432897!5m2!1svi!2s" width="1550" height="400" style={{border:'0'}}  loading="lazy"></iframe>
@@ -138,7 +137,6 @@ const Lienhe = (props: Props) => {
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.863981044336!2d105.7445984148835!3d21.038127785993215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b991d80fd5%3A0x53cefc99d6b0bf6f!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1665301432897!5m2!1svi!2s" width="100%" height="400" style={{border:'0'}}  loading="lazy"></iframe>
 
     </div>
->>>>>>> ducmt
   </>
 
   )
