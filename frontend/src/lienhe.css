@@ -7,12 +7,6 @@ html {
 -ms-text-size-adjust: 100%;
 -webkit-text-size-adjust: 100%;
 }
-button, input, select, textarea {
-  font: inherit;
-}
-button, input, select {
-  overflow: visible;
-}
 a {
   background-color: transparent;
 }
@@ -248,52 +242,6 @@ a {
   color: #334862;
 text-decoration: none;
 }
-.button, button, input[type='submit'], input[type='reset'], input[type='button'] {
-  position: relative;
-display: inline-block;
-background-color: transparent;
-text-transform: uppercase;
-font-size: 0.97em;
-letter-spacing: 0.03em;
--ms-touch-action: none;
-touch-action: none;
-cursor: pointer;
-font-weight: bolder;
-text-align: center;
-color: currentColor;
-text-decoration: none;
-border: 1px solid transparent;
-vertical-align: middle;
-border-radius: 0;
-margin-top: 0px;
-margin-right: 1em;
-text-shadow: none;
-line-height: 2.4em;
-min-height: 2.5em;
-padding: 0 1.2em;
-max-width: 100%;
-transition: transform .3s, border .3s, background .3s, box-shadow .3s, opacity .3s, color .3s;
-text-rendering: optimizeLegibility;
-box-sizing: border-box;
-}
-.button, input[type='submit'], input[type='submit'].button, input[type='reset'].button, input[type='button'].button {
-  color: #fff;
-background-color: #446084;
-background-color: var(--primary-color);
-border-color: rgba(0, 0, 0, 0.05);
-}
-.is-outline {
-  color: silver;
-}
-.button, button, input, textarea, select, fieldset {
-  margin-bottom: 1em;
-}
-button, [type='button'], [type='reset'], [type='submit'] {
-  cursor: pointer;
-}
-button, html [type='button'], [type='reset'], [type='submit'] {
-  -webkit-appearance: button;
-}
 input[type='submit'], input[type='submit'].button, input[type='submit'], .primary {
   background-color: #446084;
 }
@@ -404,13 +352,6 @@ object-fit: cover;
 .sec_lien_he a {
   color: #353535;
 }
-.button.is-outline {
-  line-height: 2.19em;
-}
-.button.is-outline, input[type='submit'].is-outline, input[type='reset'].is-outline, input[type='button'].is-outline {
-  border: 2px solid currentColor;
-background-color: transparent;
-}
 .button.icon {
   margin-left: 0.12em;
 margin-right: 0.12em;
@@ -421,29 +362,6 @@ display: inline-block;
 }
 .button.tooltip {
   opacity: 1;
-}
-.sec_lien_he .social-icons a {
-  margin-right: 10px;
-}
-.button.icon.circle {
-  padding-left: 0px;
-padding-right: 0px;
-}
-.links > li > a::before, i[class^='icon-'], i[class*=' icon-'] {
-  font-family: "fl-icons" !important;
-margin: 0;
-padding: 0;
-display: inline-block;
-font-style: normal !important;
-font-weight: normal !important;
-font-variant: normal !important;
-text-transform: none !important;
-position: relative;
-line-height: 1.2;
-}
-button i, .button i {
-  vertical-align: middle;
-top: -1.5px;
 }
 .icon-feed::before {
   content: "\e008";
@@ -617,64 +535,6 @@ body,
 .relative {
     position: relative !important;
 }
-
-.section {
-    padding: 30px 0;
-    position: relative;
-    min-height: auto;
-    width: 100%;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-flow: row;
-    flex-flow: row;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-#section_1584239841 {
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-#wrapper,
-#main {
-    background-color: #fff;
-    position: relative;
-}
-
-body {
-    line-height: 1.6;
-}
-
-body {
-    overflow-x: hidden;
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-}
-
-body {
-    font-weight: 0;
-}
-
-body {
-    color: #353535;
-}
-
-html {
-    box-sizing: border-box;
-    background-attachment: fixed;
-}
-
-html {
-    overflow-x: hidden;
-}
-
-:root {
-    --primary-color: #c30005:;
-}
-
 
 @media screen and (min-width:850px){
   .large-12 {
