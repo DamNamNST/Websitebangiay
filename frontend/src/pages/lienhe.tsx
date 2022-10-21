@@ -8,7 +8,7 @@ const Lienhe = (props: Props) => {
       <div className="row" style={{ backgroundColor: "white" }}>
         <div className="col medium-6 small-12 large-6" data-animate="fadeInLeft" data-animated="true">
           <div className="col-inner">
-            <h3 style={{ color: "red" }}>THÔNG TIN LIÊN HỆ</h3>
+            <h3 style={{ color: "red" }}>THÔNG TIN LIÊN HỆ yêu em say đăms</h3>
             <div className="icon-box featured-box icon-box-left text-left" style={{ margin: '0px 0px 10px' }}>
               <div className="icon-box-img" style={{ width: 20 }}>
                 <div className="icon">
