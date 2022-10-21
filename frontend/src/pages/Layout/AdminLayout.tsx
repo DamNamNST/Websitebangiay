@@ -1,27 +1,110 @@
-import { Outlet } from 'react-router-dom'
-import { HeaderAdmin } from './components/headerAdmin'
-import { NavBar } from './components/navbar'
+import React, { useState } from 'react'
 
-type Props = {}
+import { MailOutlined, LaptopOutlined, AndroidFilled, UnorderedListOutlined, CustomerServiceFilled, ApiFilled,SearchOutlined} from '@ant-design/icons';
+import { Input, MenuProps } from 'antd';
+import {  Layout, Menu } from 'antd';
+import { Link, Outlet } from 'react-router-dom';
+import styled from 'styled-components';
+const { Header, Content, Sider } = Layout;
 
-const AdminLayout = (props: Props) => {
+type MenuItem = Required<MenuProps>['items'][number];
+
+function getItem(
+  label: React.ReactNode,
+  key: React.Key,
+  icon?: React.ReactNode,
+  children?: MenuItem[],
+  type?: 'group',
+): MenuItem {
+  return {
+    key,
+    icon,
+    children,
+    label,
+    type,
+  } as MenuItem;
+}
+
+const items: MenuItem[] = [
+  getItem('Sản phẩm', 'sub1', <AndroidFilled />, [
+    getItem(<Link to="/admin">Danh sách</Link>, '1', <UnorderedListOutlined />),
+
+
+  ]),
+  getItem('Loại hàng', 'sub2', <MailOutlined />, [
+    getItem( <Link to="/admin">Điện thoại</Link>, '5', <LaptopOutlined/>),
+    getItem(<Link to="/admin">Phụ kiện</Link>, '2', <CustomerServiceFilled />),
+    getItem(<Link to="/admin">Linh kiện</Link>, '3', <ApiFilled />),
+  ]),
+  getItem('Đơn hàng', 'sub3', <AndroidFilled />, [
+    getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
+  ]),
+ 
+];
+const rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
+const AdminLayout = () => {
+
+  const [openKeys, setOpenKeys] = useState(['sub1']);
+
+  const onOpenChange: MenuProps['onOpenChange'] = keys => {
+    const latestOpenKey = keys.find(key => openKeys.indexOf(key) === -1);
+    if (rootSubmenuKeys.indexOf(latestOpenKey!) === -1) {
+      setOpenKeys(keys);
+    } else {
+      setOpenKeys(latestOpenKey ? [latestOpenKey] : []);
+    }
+  }
   return (
     <div>
-      <div className='row relative ' >
-        <div className="col-2 fixed top-0 z-50 ">
-          <NavBar />
-        </div>
-        <div className="col-10 ml-14">
-          <HeaderAdmin />
-          <div className="pt-16">
+         <Layout>
+    <HeaderCustom>
+      
+      <b style={{float:"right",margin:"auto", color:"white"}}>Dashboard</b>
+      <div style={{ margin: "auto 0" }}>
+                    <div>
+                        <Input size="large" placeholder=" Search here..." style={{ borderRadius: "10px" }} />
+                    </div>
+                </div>
+               
+    </HeaderCustom>
+    <Layout>
+      <Sider
+        collapsible={true}
+        width={200}
+        className="site-layout-background">
+        <Menu
+          mode="inline"
+          defaultSelectedKeys={['1']}
+          defaultOpenKeys={['sub1']}
+          style={{ height: '100%', borderRight: 0 }}
+          items={items}
+        />
+      </Sider>
+      <Layout style={{ padding: '0 24px 24px' }}>
+        <ContentCustom>
           <Outlet />
-
-          </div>
-        </div>
-      </div>
+        </ContentCustom>
+      </Layout>
+    </Layout>
+  </Layout>
     </div>
-
   )
 }
+
+const HeaderCustom = styled(Header)`
+    background-color: #00B0D7;
+    height: 64px;
+    display: flex;
+    align-items: center;
+`
+
+const Logo = styled.img`
+    width: 64px;
+    height: auto;
+`
+
+const ContentCustom = styled(Content)`
+  min-height: 100vh;
+`
 
 export default AdminLayout
