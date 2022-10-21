@@ -52,6 +52,7 @@ function App() {
   }, []);
   return (
     <Routes>
+      
       <Route path={'/'} element={< Layoutclient />}>
         <Route index element={< Homepage />} />
         <Route path={"/about"} element={< About />} />
