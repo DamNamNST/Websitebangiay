@@ -9,7 +9,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Homepage from './pages/Homepage';
-import Layoutclient from './pages/Layout/Layoutclient';
+
 import About from './pages/About/About';
 import Products from './pages/ProductList/products';
 import Lienhe from './pages/lienhe';
@@ -20,7 +20,7 @@ import { listUser } from './api/User';
 import { listCategory } from './api/Categories';
 import Cart from './pages/Website/Cart/Cart';
 import Pay from './pages/Website/Pay/Pay';
-import AdminLayout from './pages/Layout/AdminLayout';
+
 import Dashbroad from './pages/admin/dashbroad';
 import Categories from './pages/admin/Categories/Categories';
 import CategoriesAdd from './pages/admin/Categories/CategoriesAdd';
@@ -29,6 +29,8 @@ import Users from './pages/admin/User/User';
 import UserAdd from './pages/admin/User/UserAdd';
 import UserEdit from './pages/admin/User/UserEdit';
 import ErrorsWeb from './pages/404/errorsWeb';
+import AdminLayout from './Layout/AdminLayout';
+import Layoutclient from './Layout/Layoutclient';
 
 
 
