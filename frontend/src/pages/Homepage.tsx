@@ -11,6 +11,7 @@ import Banner2 from '../components/Banner2/Banner2'
 const Homepage = () => {
 
 
+
    return (
       <>
          <Banner />
