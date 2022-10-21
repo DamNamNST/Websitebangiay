@@ -3,15 +3,15 @@ import '../lienhe.css'
 type Props = {}
 const Lienhe = (props: Props) => {
   return (<>
-   <div className="row" style={{ backgroundColor: "white" }}>
+    <div className="row" style={{ backgroundColor: "white" }}>
       <div className="col medium-6 small-12 large-6" data-animate="fadeInLeft" data-animated="true">
         <div className="col-inner">
-          <h3 style={{color:"red"}}>THÔNG TIN LIÊN HỆ</h3>
+          <h3 style={{ color: "red" }}>THÔNG TIN LIÊN HỆ</h3>
           <div className="icon-box featured-box icon-box-left text-left" style={{ margin: '0px 0px 10px' }}>
             <div className="icon-box-img" style={{ width: 20 }}>
               <div className="icon">
                 <div className="icon-inner">
-                  <svg  id="Layer_1" style={{}} viewBox="0 0 440 440" x="0px" y="0px" xmlSpace="preserve" version="1.1">
+                  <svg id="Layer_1" style={{}} viewBox="0 0 440 440" x="0px" y="0px" xmlSpace="preserve" version="1.1">
                     <g>
                       <path d="M 340.57 241.141 c -54.826 0 -99.429 44.604 -99.429 99.43 c 0 54.825 44.604 99.429 99.429 99.429 S 440 395.396 440 340.571 C 440 285.745 395.396 241.141 340.57 241.141 Z M 328.122 395.104 l -58.807 -58.807 l 21.213 -21.213 l 37.594 37.594 l 56.035 -56.034 l 21.213 21.213 L 328.122 395.104 Z" />
                       <path d="M 166.62 119.397 c -24.813 0 -45 20.187 -45 45 s 20.187 45 45 45 c 24.813 0 45 -20.187 45 -45 S 191.433 119.397 166.62 119.397 Z" />
@@ -53,7 +53,7 @@ const Lienhe = (props: Props) => {
                         <polygon points="0,137.415 0,150.224 0,281.52 1.479,281.52 60.832,221.766 66.667,215.892 72.127,210.391 77.588,204.891 85.158,197.271 45.731,169.042 8.147,142.135 0,136.299" />
                         <path d="M 231.905 222.705 l -9.692 -9.545 l -5.39 -5.311 l -5.39 -5.31 l -1.382 -1.366 l -5.489 -5.4 l -0.954 -0.938 c -1.599 -1.576 -3.27 -3.053 -4.989 -4.461 c -12.777 -10.457 -28.655 -16.158 -45.399 -16.158 c -16.767 0 -32.616 5.69 -45.394 16.137 c -1.938 1.582 -3.813 3.265 -5.598 5.058 l -0.334 0.338 l -5.363 5.399 l -3.452 3.48 l -5.458 5.495 l -5.46 5.495 l -17.921 18.046 l -47.276 47.593 h 274.396 L 231.905 222.705 Z" />
                       </g>
-                      </g>
+                    </g>
                   </svg>
                 </div>
               </div>
@@ -79,10 +79,10 @@ const Lienhe = (props: Props) => {
             </div>
           </div>{/* .icon-box */}
           <div className="social-icons follow-icons">
-          <i className="fa-brands fa-facebook"></i>
-          <i className="icon-instagram" />
-          <i className="icon-twitter" /><i className="icon-pinterest" />
-          <i className="icon-feed" /></div>
+            <i className="fa-brands fa-facebook"></i>
+            <i className="icon-instagram" />
+            <i className="icon-twitter" /><i className="icon-pinterest" />
+            <i className="icon-feed" /></div>
         </div>
       </div>
       <div className="col medium-6 small-12 large-6" data-animate="fadeInRight" data-animated="true">
@@ -111,7 +111,7 @@ const Lienhe = (props: Props) => {
                   <span className="wpcf7-form-control-wrap text-address"><input name="text-address" className="wpcf7-form-control wpcf7-text form_lien_he" id="text-address" aria-invalid="false" type="text" size={40} placeholder="Địa chỉ" /></span>
                 </div>
                 <div className="form-row">
-                  <span className="wpcf7-form-control-wrap textarea-noidung"><textarea name="textarea-noidung" className="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form_lien_he" id="textarea-noidung" aria-invalid="false" aria-required="true" placeholder="Lời nhắn" rows={10} cols={40}  /></span>
+                  <span className="wpcf7-form-control-wrap textarea-noidung"><textarea name="textarea-noidung" className="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required form_lien_he" id="textarea-noidung" aria-invalid="false" aria-required="true" placeholder="Lời nhắn" rows={10} cols={40} /></span>
                 </div>
                 <div className="form-row center-txt">
                   <input className="wpcf7-form-control wpcf7-submit form_lien_he" id="bt-gui" type="submit" defaultValue="Gửi" /><span className="ajax-loader" />
@@ -123,15 +123,9 @@ const Lienhe = (props: Props) => {
         </div>
       </div>
     </div>
-    <div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.863981044336!2d105.7445984148835!3d21.038127785993215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b991d80fd5%3A0x53cefc99d6b0bf6f!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1665301432897!5m2!1svi!2s" width="1550" height="400" style={{border:'0'}}  loading="lazy"></iframe>
-
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.863981044336!2d105.7445984148835!3d21.038127785993215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313454b991d80fd5%3A0x53cefc99d6b0bf6f!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1665301432897!5m2!1svi!2s" width="100%" height="400" style={{border:'0'}}  loading="lazy"></iframe>
-
-    </div>
   </>
-   
+
   )
 }
 
