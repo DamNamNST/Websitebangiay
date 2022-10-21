@@ -15,7 +15,7 @@ const Homepage = () => {
 
    return (
       <>
-      <Header/>
+   
          <Banner />
          <Category />
          <NewProducts />

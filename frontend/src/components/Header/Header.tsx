@@ -75,7 +75,7 @@ const Header = (props: Props) => {
           <div className=" Signinup font-bold text-sm leading-[84px]"><button onClick={showModal} >ĐĂNG NHẬP /  ĐĂNG KÝ</button></div>
           <div onClick={showmenu} className="icon"><svg className="h-8 w-8 text-red-500" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z" />  <line x1="4" y1="6" x2="20" y2="6" />  <line x1="4" y1="12" x2="20" y2="12" />  <line x1="4" y1="18" x2="20" y2="18" /></svg></div>
           <div className="logo">
-            <img width="" height="" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/308111893_885385725774440_7698410002652142991_n.png?stp=dst-png_p403x403&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_ohc=kNM2wV39JeMAX_c2Hp5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVInPTTa9iyXiaIInuWm3fqRAW6jy8p7u7Uqg_3xyqynqQ&oe=63668FB5" alt="" />
+            <img width="" height="" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t1.15752-9/312310449_1180707919470368_4581503676013849018_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=cnHGL39c38gAX-yla7X&_nc_ht=scontent.fhan14-3.fna&oh=03_AdSBJ2HxWARXhmcXS-SZpeAVko1OAGyUrzfRrCD6tS2dIg&oe=6376EB75" alt="" />
           </div>
           <div className="cart">
 

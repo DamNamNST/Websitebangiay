@@ -1,12 +1,10 @@
-
 import React from 'react';
 import './App.css';
 import { useEffect, useState } from 'react';
-
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import Homepage from './pages/Homepage';
-
+import Layoutclient from './pages/Layout/Layoutclient';
 import About from './pages/About/About';
 import Products from './pages/ProductList/products';
 import Lienhe from './pages/lienhe';
@@ -25,7 +23,6 @@ import Users from './pages/admin/User/User';
 import UserAdd from './pages/admin/User/UserAdd';
 import UserEdit from './pages/admin/User/UserEdit';
 import ErrorsWeb from './pages/404/errorsWeb';
-
 import DetailProduct from './pages/detailProduct';
 import Blog from './pages/admin/Blog/Blog';
 import BlogAdd from './pages/admin/Blog/BlogAdd';
@@ -34,8 +31,6 @@ import Comment from './pages/admin/Comment/Comment';
 import CommentAdd from './pages/admin/Comment/CommentAdd';
 import CommentEdit from './pages/admin/Comment/CommentEdit';
 import AdminLayout from './Layout/AdminLayout';
-import Layoutclient from './Layout/Layoutclient';
-
 
 function App() {
   const [user, setUser] = useState<IUsers[]>([])
@@ -57,11 +52,14 @@ function App() {
   }, []);
   return (
     <Routes>
-      
       <Route path={'/'} element={< Layoutclient />}>
         <Route index element={< Homepage />} />
         <Route path={"/about"} element={< About />} />
         <Route path={"/products"} element={< Products />} />
+
+        <Route path='/lienhe' element={<Lienhe />} />
+        <Route path='/login' element={<SingInUp />} />
+        <Route path={"/detail"} element={< DetailProduct />} />
         <Route path='cart' element={<Cart />} />
         <Route path='pay' element={<Pay />} />
       </Route>
@@ -92,7 +90,6 @@ function App() {
 
       </Route>
       <Route path="*" element={<ErrorsWeb />} />
-
     </Routes>
   );
 }
