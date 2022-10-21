@@ -1,4 +1,4 @@
-import clsx from 'clsx';
+import clsx from 'clsx'
 
 interface ButtonProps {
     handleClick?: () => void;
@@ -7,7 +7,6 @@ interface ButtonProps {
     customStyle?: string;
     id?:string;
 }
-
 
 export const ButtonComponent = (props: ButtonProps) => {
     const { children, handleClick, customStyle, type ,id } = props

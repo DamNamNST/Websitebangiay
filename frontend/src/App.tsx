@@ -1,10 +1,7 @@
 
-
-import logo from '.logo.svg';
+import React from 'react';
 import './App.css';
-import './App.css';
-
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import './App.css';
 import { Route, Routes } from 'react-router-dom';
@@ -21,7 +18,6 @@ import { listCategory } from './api/Categories';
 import Cart from './pages/Website/Cart/Cart';
 import Pay from './pages/Website/Pay/Pay';
 
-import Dashbroad from './pages/admin/dashbroad';
 import Categories from './pages/admin/Categories/Categories';
 import CategoriesAdd from './pages/admin/Categories/CategoriesAdd';
 import CategoriesEdit from './pages/admin/Categories/CategoriesEdit';
@@ -29,9 +25,16 @@ import Users from './pages/admin/User/User';
 import UserAdd from './pages/admin/User/UserAdd';
 import UserEdit from './pages/admin/User/UserEdit';
 import ErrorsWeb from './pages/404/errorsWeb';
+
+import DetailProduct from './pages/detailProduct';
+import Blog from './pages/admin/Blog/Blog';
+import BlogAdd from './pages/admin/Blog/BlogAdd';
+import BlogEdit from './pages/admin/Blog/BlogEdit';
+import Comment from './pages/admin/Comment/Comment';
+import CommentAdd from './pages/admin/Comment/CommentAdd';
+import CommentEdit from './pages/admin/Comment/CommentEdit';
 import AdminLayout from './Layout/AdminLayout';
 import Layoutclient from './Layout/Layoutclient';
-
 
 
 function App() {
@@ -59,13 +62,11 @@ function App() {
         <Route index element={< Homepage />} />
         <Route path={"/about"} element={< About />} />
         <Route path={"/products"} element={< Products />} />
-
-        <Route path={"/lienhe"} element={< Lienhe />} />
         <Route path='cart' element={<Cart />} />
         <Route path='pay' element={<Pay />} />
       </Route>
       <Route path="admin" element={<AdminLayout />}>
-        <Route index element={<Dashbroad />} />
+        {/* <Route index element={<Dashbroad />} /> */}
         <Route path="categories">
           <Route index element={<Categories categories={categories} />} />
           <Route path="add" element={<CategoriesAdd />} />
@@ -76,6 +77,18 @@ function App() {
           <Route path="add" element={<UserAdd />} />
           <Route path=":id/edit" element={<UserEdit />} />
         </Route>
+        <Route path='Blog'>
+          <Route index element={<Blog />} />
+          <Route path='add' element={<BlogAdd />} />
+          <Route path='edit/:id' element={<BlogEdit />} />
+        </Route>
+        <Route path='comment'>
+          <Route index element={<Comment />} />
+          <Route path='add' element={<CommentAdd />} />
+          <Route path='edit/:id' element={<CommentEdit />} />
+        </Route>
+
+
 
       </Route>
       <Route path="*" element={<ErrorsWeb />} />

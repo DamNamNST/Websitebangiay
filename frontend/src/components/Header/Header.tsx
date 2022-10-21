@@ -132,25 +132,25 @@ const Header = (props: Props) => {
         </Modal>
       </section>
       <section className='bg-[#DCDCDC] hidden'>
-<nav className="max-w-6xl mx-auto">
-  <ul className="p-3 text-center">
-    <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
-    <li className="inline-block p-3"><Link to="about">Giới Thiệu</Link></li>
-    <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
-    <li className="inline-block p-3">
-      <Link to="products">
-        <Popover className='pl-3' placement="bottom" content={dropdown} trigger="hover">
-         Nam
-        </Popover>
-      </Link>
-    </li>
-    <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
-    <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
-    <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
-    <li className="inline-block p-3"><Link to="lienhe">Liên Hệ</Link></li>
-  </ul>
-</nav>
-</section>
+        <nav className="max-w-6xl mx-auto">
+          <ul className="p-3 text-center">
+            <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
+            <li className="inline-block p-3"><Link to="about">Giới Thiệu</Link></li>
+            <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
+            <li className="inline-block p-3">
+              <Link to="products">
+                <Popover className='pl-3' placement="bottom" content={dropdown} trigger="hover">
+                  Nam
+                </Popover>
+              </Link>
+            </li>
+            <li className="inline-block p-3"><Link to="/detail">Detail</Link></li>
+            <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
+            <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
+            <li className="inline-block p-3"><Link to="lienhe">Liên Hệ</Link></li>
+          </ul>
+        </nav>
+      </section>
 
     </>
   )

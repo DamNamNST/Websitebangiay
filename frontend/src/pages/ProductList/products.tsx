@@ -478,7 +478,7 @@ const Products = (props: Props) => {
                                         </div>{/* box */}
                                     </div>{/* .col-inner */}
                                 </div>{/* col */}
-                           
+
                             </div>
                         </div>{/* shop container */}
                     </div>
