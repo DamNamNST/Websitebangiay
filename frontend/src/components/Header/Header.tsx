@@ -323,7 +323,7 @@ const Header = (props: Props) => {
               <Link to="">Trang chu</Link>
             </li>
             <li className="inline-block p-3">
-              <Link to="">Tin Tức</Link>
+              <Link to="news">Tin Tức</Link>
             </li>
             <li className="inline-block p-3">
               <Link to="lienhe">Liên Hệ</Link>
