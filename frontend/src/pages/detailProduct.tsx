@@ -1,7 +1,9 @@
 
 import React from 'react'
-import '../detail.css'
-import { StarOutlined } from '@ant-design/icons';
+import '../pages/detail/detail.css'
+import './detail/star.js'
+import './detail/detail.js'
+import { BiChevronsLeft,BiChevronsRight } from "react-icons/bi";
 type Props = {}
 
 const DetailProduct = (props: Props) => {
@@ -10,81 +12,24 @@ const DetailProduct = (props: Props) => {
       <div className="product-container">
         <div className="product-main">
           <div className="row content-row mb-0">
-            <div className="product-gallery large-6 col">
-              <div className="product-images relative mb-half has-hover woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-4 images" style={{ opacity: 1 }} data-columns={4}>
-                <div className="badge-container is-larger absolute left top z-1">
+            <div className="product-gallery large-6 col"> tối code lại ở trong này và dưới
+              <div>
+                <div className="main2">
+                    <img className='img-feature' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2018/10/logo-vcb.jpg" alt="" />
+                    <div className='control prev'><BiChevronsLeft /></div>
+                    <div className='control next'> 
+                    <i className='bx bxs-chevrons-right'><BiChevronsRight /></i>
+                    </div>
                 </div>
-                <div className="image-tools absolute top show-on-hover right z-3">
-                </div>
-                <figure tabIndex={0} className="woocommerce-product-gallery__wrapper product-gallery-slider slider slider-nav-small mb-half flickity-enabled is-draggable" data-flickity-options="{
-                            &quot;cellAlign&quot;: &quot;center&quot;,
-                            &quot;wrapAround&quot;: true,
-                            &quot;autoPlay&quot;: false,
-                            &quot;prevNextButtons&quot;:true,
-                            &quot;adaptiveHeight&quot;: true,
-                            &quot;imagesLoaded&quot;: true,
-                            &quot;lazyLoad&quot;: 1,
-                            &quot;dragThreshold&quot; : 15,
-                            &quot;pageDots&quot;: false,
-                            &quot;rightToLeft&quot;: false       }">
-                  <div className="flickity-viewport" style={{ height: '374.4px', touchAction: 'pan-y' }}>
-                    <div className="flickity-slider" style={{ left: 0, transform: 'translateX(0%)' }}>
-                      <div className="woocommerce-product-gallery__image slide first is-selected" aria-selected="true" style={{ left: '0%', position: 'absolute' }} data-thumb="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-100x100.jpg">
-                        <a href="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5.jpg"><img width={600} height={384} title="kid-5" className="wp-post-image skip-lazy" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-600x384.jpg" data-src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5.jpg" sizes="(max-width: 600px) 100vw, 600px" srcSet="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-600x384.jpg 600w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-300x192.jpg 300w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-768x492.jpg 768w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-1024x655.jpg 1024w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5.jpg 1600w" data-large_image_height={1024} data-large_image_width={1600} data-large_image="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5.jpg" data-caption /></a></div>
-                      <div className="woocommerce-product-gallery__image slide" aria-selected="false" style={{ left: '100%', position: 'absolute' }} data-thumb="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-1-100x100.jpg">
-                        <a href="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-1.jpg"><img width={600} height={384} title="kid-5-1" className="skip-lazy" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-1-600x384.jpg" data-src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-1.jpg" sizes="(max-width: 600px) 100vw, 600px" srcSet="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-1-600x384.jpg 600w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-1-300x192.jpg 300w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-1-768x492.jpg 768w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-1-1024x655.jpg 1024w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-1.jpg 1600w" data-large_image_height={1024} data-large_image_width={1600} data-large_image="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-1.jpg" data-caption /></a></div>
-                      <div className="woocommerce-product-gallery__image slide" aria-selected="false" style={{ left: '200%', position: 'absolute' }} data-thumb="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-2-100x100.jpg">
-                        <a href="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-2.jpg"><img width={600} height={384} title="kid-5-2" className="skip-lazy" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-2-600x384.jpg" data-src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-2.jpg" sizes="(max-width: 600px) 100vw, 600px" srcSet="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-2-600x384.jpg 600w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-2-300x192.jpg 300w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-2-768x492.jpg 768w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-2-1024x655.jpg 1024w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-2.jpg 1600w" data-large_image_height={1024} data-large_image_width={1600} data-large_image="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-2.jpg" data-caption /></a></div>
-                      <div className="woocommerce-product-gallery__image slide" aria-selected="false" style={{ left: '300%', position: 'absolute' }} data-thumb="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-3-100x100.jpg">
-                        <a href="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-3.jpg"><img width={600} height={384} title="kid-5-3" className="skip-lazy" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-3-600x384.jpg" data-src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-3.jpg" sizes="(max-width: 600px) 100vw, 600px" srcSet="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-3-600x384.jpg 600w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-3-300x192.jpg 300w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-3-768x492.jpg 768w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-3-1024x655.jpg 1024w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-3.jpg 1600w" data-large_image_height={1024} data-large_image_width={1600} data-large_image="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-3.jpg" data-caption /></a></div>
-                      <div className="woocommerce-product-gallery__image slide" aria-selected="false" style={{ left: '400%', position: 'absolute' }} data-thumb="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-4-100x100.jpg">
-                        <a href="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-4.jpg"><img width={600} height={384} title="kid-5-4" className="skip-lazy" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-4-600x384.jpg" data-src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-4.jpg" sizes="(max-width: 600px) 100vw, 600px" srcSet="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-4-600x384.jpg 600w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-4-300x192.jpg 300w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-4-768x492.jpg 768w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-4-1024x655.jpg 1024w, http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-4.jpg 1600w" data-large_image_height={1024} data-large_image_width={1600} data-large_image="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-4.jpg" data-caption /></a></div>
-                    </div>
-                  </div><button className="flickity-button flickity-prev-next-button previous" aria-label="Previous" type="button"><svg xmlns="http://www.w3.org/2000/svg" className="flickity-button-icon" viewBox="0 0 100 100">
-                    <path className="arrow" d="M 10 50 L 60 100 L 70 90 L 30 50 L 70 10 L 60 0 Z" />
-                  </svg></button><button className="flickity-button flickity-prev-next-button next" aria-label="Next" type="button"><svg xmlns="http://www.w3.org/2000/svg" className="flickity-button-icon" viewBox="0 0 100 100">
-                    <path className="arrow" transform="translate(100 100) rotate(180)" d="M 10 50 L 60 100 L 70 90 L 30 50 L 70 10 L 60 0 Z" />
-                  </svg></button>
-                </figure>
-                <div className="image-tools absolute bottom left z-3">
-                  <a className="zoom-button button is-outline circle icon tooltip hide-for-small tooltipstered" href="#product-zoom">
-                    <i className="icon-expand" /> </a>
-                </div>
-              </div>
-              <div tabIndex={0} className="product-thumbnails thumbnails slider-no-arrows slider row row-small row-slider slider-nav-small small-columns-4 flickity-enabled is-draggable" data-flickity-options="{
-                              &quot;cellAlign&quot;: &quot;left&quot;,
-                              &quot;wrapAround&quot;: false,
-                              &quot;autoPlay&quot;: false,
-                              &quot;prevNextButtons&quot;: true,
-                              &quot;asNavFor&quot;: &quot;.product-gallery-slider&quot;,
-                              &quot;percentPosition&quot;: true,
-                              &quot;imagesLoaded&quot;: true,
-                              &quot;pageDots&quot;: false,
-                              &quot;rightToLeft&quot;: false,
-                              &quot;contain&quot;: true
-                          }">
-                <div className="flickity-viewport" style={{ height: '94.23px', touchAction: 'pan-y' }}>
-                  <div className="flickity-slider" style={{ left: 0, transform: 'translateX(0%)' }}>
-                    <div className="col first is-nav-selected is-selected" aria-selected="true" style={{ left: '0%', position: 'absolute' }}>
-                      <a>
-                        <img width={300} height={225} className="attachment-woocommerce_thumbnail" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-300x225.jpg" />
-                      </a>
-                    </div>
-                    <div className="col" aria-selected="false" style={{ left: '25%', position: 'absolute' }}><a><img width={300} height={225} className="attachment-woocommerce_thumbnail" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-1-300x225.jpg" /></a>
-                    </div>
-                    <div className="col" aria-selected="false" style={{ left: '50%', position: 'absolute' }}><a><img width={300} height={225} className="attachment-woocommerce_thumbnail" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-2-300x225.jpg" /></a>
-                    </div>
-                    <div className="col" aria-selected="false" style={{ left: '75%', position: 'absolute' }}><a><img width={300} height={225} className="attachment-woocommerce_thumbnail" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-3-300x225.jpg" /></a>
-                    </div>
-                    <div className="col" aria-selected="false" style={{ left: '100%', position: 'absolute' }}><a><img width={300} height={225} className="attachment-woocommerce_thumbnail" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-5-4-300x225.jpg" /></a>
-                    </div>
+                <div className="list-image">
+                  <div><img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-6-100x100.jpg" alt="" /></div>
+                  <div><img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-6-100x100.jpg" alt="" /></div>
+                  <div><img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-6-100x100.jpg" alt="" /></div>
+                  <div><img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-6-100x100.jpg" alt="" /></div>
+                  <div><img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-6-100x100.jpg" alt="" /></div>
                   </div>
-                </div><button disabled className="flickity-button flickity-prev-next-button previous" aria-label="Previous" type="button"><svg xmlns="http://www.w3.org/2000/svg" className="flickity-button-icon" viewBox="0 0 100 100">
-                  <path className="arrow" d="M 10 50 L 60 100 L 70 90 L 30 50 L 70 10 L 60 0 Z" />
-                </svg></button><button className="flickity-button flickity-prev-next-button next" aria-label="Next" type="button"><svg xmlns="http://www.w3.org/2000/svg" className="flickity-button-icon" viewBox="0 0 100 100">
-                  <path className="arrow" transform="translate(100 100) rotate(180)" d="M 10 50 L 60 100 L 70 90 L 30 50 L 70 10 L 60 0 Z" />
-                </svg></button>
-              </div>{/* .product-thumbnails */}
+              </div>
+              {/* .product-thumbnails */}
             </div>
             <div className="product-info summary col-fit col entry-summary product-summary">
               <nav className="woocommerce-breadcrumb breadcrumbs"><a href="http://mauweb.monamedia.net/converse">Trang chủ</a> <span className="divider">/</span> <a href="http://mauweb.monamedia.net/converse/danh-muc/tre-em/">Trẻ em</a>
@@ -532,7 +477,7 @@ const DetailProduct = (props: Props) => {
             <ul className="product-tabs small-nav-collapse tabs nav nav-uppercase nav-tabs nav-normal nav-left">
 
               <li className="reviews_tab additional_information_tab active">
-                <a href="#tab-reviews">Đánh giá (0)</a>
+                <a href="#tab-additional_information">Đánh giá (0)</a>
               </li>
             </ul>
             <div className="panel entry-content " id="tab-reviews">
@@ -545,16 +490,18 @@ const DetailProduct = (props: Props) => {
                   <div id="review_form" className="col-inner">
                     <div className="review-form-inner has-border">
                       <div id="respond" className="comment-respond">
-                        <h3 id="reply-title" className="comment-reply-title">Hãy là người đầu tiên nhận xét “Chuck 70 Archive Prints Hi” <small><a rel="nofollow" id="cancel-comment-reply-link" href="/converse/san-pham/chuck-70-archive-prints-hi-2/#respond" style={{ display: 'none' }}>Hủy</a></small></h3>			<form action="http://mauweb.monamedia.net/converse/wp-comments-post.php" method="post" id="commentform" className="comment-form" noValidate>
-                          <div className="comment-form-rating"><label htmlFor="rating">Đánh giá của bạn</label><p className="stars"><span><a className="star-1" href="#"><StarOutlined /></a><a className="star-2" href="#">2<StarOutlined /><StarOutlined /></a><a className="star-3" href="#">3<StarOutlined /><StarOutlined /><StarOutlined /></a><a className="star-4" href="#">4<StarOutlined /><StarOutlined /><StarOutlined /><StarOutlined /></a><a className="star-5" href="#">5<StarOutlined /><StarOutlined /><StarOutlined /><StarOutlined /><StarOutlined /></a></span></p>
-                            <select name="rating" id="rating" required style={{ display: 'none' }}>
-                              <option>Xếp hạng…</option>
-                              <option value={5}>Rất tốt</option>
-                              <option value={4}>Tốt</option>
-                              <option value={3}>Trung bình</option>
-                              <option value={2}>Không tệ</option>
-                              <option value={1}>Rất tệ</option>
-                            </select>
+                        <h3 id="" className="comment-reply-title">Hãy là người đầu tiên nhận xét “Chuck 70 Archive Prints Hi” <small><a rel="nofollow" id="cancel-comment-reply-link" href="" style={{ display: 'none' }}>Hủy</a></small></h3>			<form method="post" id="commentform" className="comment-form" noValidate>
+                          <div>
+                            <h1 className="rating_heading">đánh giá</h1>
+                            <div className="star_-rating">
+                              <button className="star">☆</button>
+                              <button className="star">☆</button>
+                              <button className="star">☆</button>
+                              <button className="star">☆</button>
+                              <button className="star">☆</button>
+                              <button className="star">☆</button>
+                              <p className="current_rating">0 of 5</p>
+                            </div>
                           </div>
                           <p className="comment-form-comment"><label htmlFor="comment">Nhận xét của bạn&nbsp;<span className="required">*</span></label><textarea id="comment" name="comment" cols={45} rows={8} required defaultValue={""} /></p><p className="comment-form-author"><label htmlFor="author">Tên&nbsp;<span className="required">*</span></label> <input id="author" name="author" type="text" size={30} required /></p>
                           <p className=""><label htmlFor="email">Email</label> <input id="" name="email" type="email" size={50} required /></p>
