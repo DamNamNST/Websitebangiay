@@ -39,12 +39,12 @@ const Products = (props: Props) => {
                             Hiển thị 1–12 trong 22 kết quả</p>
                         <form className="woocommerce-ordering" method="get">
                             <select name="orderby" className="orderby">
-                                <option value="menu_order" >Thứ tự mặc định</option>
-                                <option value="popularity">Thứ tự theo mức độ phổ biến</option>
-                                <option value="rating">Thứ tự theo điểm đánh giá</option>
-                                <option value="date">Mới nhất</option>
-                                <option value="price">Thứ tự theo giá: thấp đến cao</option>
-                                <option value="price-desc">Thứ tự theo giá: cao xuống thấp</option>
+                                <option value="menu_order" style={{color:"black"}} >Thứ tự mặc định</option>
+                                <option value="popularity" style={{color:"black"}}>Thứ tự theo mức độ phổ biến</option>
+                                <option value="rating" style={{color:"black"}}>Thứ tự theo điểm đánh giá</option>
+                                <option value="date" style={{color:"black"}}>Mới nhất</option>
+                                <option value="price" style={{color:"black"}}>Thứ tự theo giá: thấp đến cao</option>
+                                <option value="price-desc " style={{color:"black"}}>Thứ tự theo giá: cao xuống thấp</option>
                             </select>
                             <input type="hidden" name="paged" defaultValue={1} />
                             <input type="hidden" name="min_price" defaultValue={1120000} /><input type="hidden" name="max_price" defaultValue={2800000} /></form>
