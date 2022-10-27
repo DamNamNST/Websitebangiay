@@ -1,8 +1,13 @@
+import ReactDOM from 'react-dom';
 import { ButtonComponent } from '../../../components/button/button';
 import { PathComponent } from '../../../components/Path/Path';
 import { IUsers } from '../../../models/User';
 import { TDComponent } from '../components/td';
 import { THComponent } from '../components/th';
+import { Button } from 'antd';
+import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 type Props = {
     user: IUsers[];
@@ -11,9 +16,12 @@ type Props = {
 const Users = (props: Props) => {
     return (
         <div className="table w-full p-2">
-            <div className="flex flex-nowrap p-3 m-2 bg-neutral-200">
+           <Link to={'/admin/user/add'}>
+           <Button type="primary" style={{borderRadius: '5px'}}>Thêm Sản Phẩm</Button>
+           </Link>
+            {/* <div className="flex flex-nowrap p-3 m-2 bg-neutral-200">
                 <PathComponent name1='Dashboard' name2='users' />
-            </div>
+            </div> */}
             <table className="w-full border">
                 <thead>
                 <tr className="bg-gray-50 border-b">
