@@ -102,12 +102,7 @@ const Header = (props: Props) => {
             </svg>
           </div>
           <div className="logo">
-            <img
-              width=""
-              height=""
-              src="https://scontent.xx.fbcdn.net/v/t1.15752-9/308111893_885385725774440_7698410002652142991_n.png?stp=dst-png_p403x403&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_ohc=kNM2wV39JeMAX_c2Hp5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVInPTTa9iyXiaIInuWm3fqRAW6jy8p7u7Uqg_3xyqynqQ&oe=63668FB5"
-              alt=""
-            />
+            <img width="" height="" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/308111893_885385725774440_7698410002652142991_n.png?stp=dst-png_p403x403&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_ohc=kNM2wV39JeMAX_c2Hp5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVInPTTa9iyXiaIInuWm3fqRAW6jy8p7u7Uqg_3xyqynqQ&oe=63668FB5" alt="" />
           </div>
           <div className="cart">
             <div className="pc">
@@ -292,45 +287,27 @@ const Header = (props: Props) => {
           <SingInUp />
         </Modal>
       </section>
-      <section className="bg-[#DCDCDC] hidden">
-        <nav className="max-w-6xl mx-auto">
-          <ul className="p-3 text-center">
-            <li className="inline-block p-3">
-              <Link to="">Trang chu</Link>
-            </li>
-            <li className="inline-block p-3">
-              <Link to="about">Giới Thiệu</Link>
-            </li>
-            <li className="inline-block p-3">
-              <Link to="purchased">Lịch sử</Link>
-            </li>
-            <li className="inline-block p-3">
-              <Link to="products">
-                <Popover
-                  className="pl-3"
-                  placement="bottom"
-                  content={dropdown}
-                  trigger="hover"
-                >
-                  Nam
-                </Popover>
-              </Link>
-            </li>
-            <li className="inline-block p-3">
-              <Link to="">Trang chu</Link>
-            </li>
-            <li className="inline-block p-3">
-              <Link to="">Trang chu</Link>
-            </li>
-            <li className="inline-block p-3">
-              <Link to="">Tin Tức</Link>
-            </li>
-            <li className="inline-block p-3">
-              <Link to="lienhe">Liên Hệ</Link>
-            </li>
-          </ul>
-        </nav>
-      </section>
+      <section className='bg-[#DCDCDC] hidden'>
+<nav className="max-w-6xl mx-auto">
+  <ul className="p-3 text-center">
+    <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
+    <li className="inline-block p-3"><Link to="about">Giới Thiệu</Link></li>
+    <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
+    <li className="inline-block p-3">
+      <Link to="products">
+        <Popover className='pl-3' placement="bottom" content={dropdown} trigger="hover">
+         Nam
+        </Popover>
+      </Link>
+    </li>
+    <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
+    <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
+    <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
+    <li className="inline-block p-3"><Link to="lienhe">Liên Hệ</Link></li>
+  </ul>
+</nav>
+</section>
+
     </>
   );
 };
