@@ -5,6 +5,8 @@ import { Input, MenuProps } from 'antd';
 import { Layout, Menu } from 'antd';
 import { Link, Outlet } from 'react-router-dom';
 import styled from 'styled-components';
+
+
 const { Header, Content, Sider } = Layout;
 
 type MenuItem = Required<MenuProps>['items'][number];
@@ -31,14 +33,38 @@ const items: MenuItem[] = [
 
 
   ]),
-  getItem('Loại hàng', 'sub2', <MailOutlined />, [
-    getItem(<Link to="/admin">Điện thoại</Link>, '5', <LaptopOutlined />),
-    getItem(<Link to="/admin">Phụ kiện</Link>, '2', <CustomerServiceFilled />),
-    getItem(<Link to="/admin">Linh kiện</Link>, '3', <ApiFilled />),
+  getItem('Danh mục 1', 'sub2', <MailOutlined />, [
+    getItem(<Link to="/admin">Loại Hàng A</Link>, '5', <LaptopOutlined />),
+    getItem(<Link to="/admin">Loại Hàng B</Link>, '2', <CustomerServiceFilled />),
+    getItem(<Link to="/admin">Loại Hàng C</Link>, '3', <ApiFilled />),
   ]),
-  getItem('Đơn hàng', 'sub3', <AndroidFilled />, [
+  getItem('Danh mục 2', 'sub3', <AndroidFilled />, [
+    getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
+    getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
     getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
   ]),
+  getItem('Danh mục 3', 'sub4', <AndroidFilled />, [
+    getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
+    getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
+    getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
+  ]),
+  getItem('Danh mục 4', 'sub4', <AndroidFilled />, [
+    getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
+    getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
+    getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
+  ]),
+  getItem('Danh mục 5', 'sub4', <AndroidFilled />, [
+    getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
+    getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
+    getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
+  ]),
+  getItem('Danh mục 6', 'sub4', <AndroidFilled />, [
+    getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
+    getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
+    getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),
+  ]),
+  
+  
 
 ];
 const rootSubmenuKeys = ['sub1', 'sub2', 'sub4'];
