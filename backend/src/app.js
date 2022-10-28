@@ -3,8 +3,9 @@ import cors from 'cors';
 import morgan from 'morgan';
 import mongoose from 'mongoose';
 
-
+import orderRouter from "../routes/order";
 import categoryRoute from '../routes/Categori';
+import productRoute from '../routes/product';
 import userRoute from '../routes/user'
 
 const app = express();
@@ -17,7 +18,9 @@ app.use(express.json())
 
 // route
 app.use("/api",categoryRoute);
+app.use("/api",productRoute);
 app.use("/api",userRoute)
+app.use("/api", orderRouter);
 
 
 // connnect database

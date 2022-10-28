@@ -1,4 +1,8 @@
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/ducmt
 body {
   margin: 0;
 }
@@ -7,12 +11,15 @@ html {
 -ms-text-size-adjust: 100%;
 -webkit-text-size-adjust: 100%;
 }
+<<<<<<< HEAD
 button, input, select, textarea {
   font: inherit;
 }
 button, input, select {
   overflow: visible;
 }
+=======
+>>>>>>> origin/ducmt
 a {
   background-color: transparent;
 }
@@ -135,7 +142,14 @@ flex-basis: 100%;
       flex-basis: 50%;
       }
 }
+<<<<<<< HEAD
 
+=======
+@media screen and (max-width: 549px){}
+.body {
+    font-size: 100%;
+}
+>>>>>>> origin/ducmt
 @media screen and (min-width:850px){
     .large-6 {
         max-width: 50%;
@@ -245,6 +259,7 @@ a {
   color: #334862;
 text-decoration: none;
 }
+<<<<<<< HEAD
 .button, button, input[type='submit'], input[type='reset'], input[type='button'] {
   position: relative;
 display: inline-block;
@@ -290,6 +305,8 @@ button, [type='button'], [type='reset'], [type='submit'] {
 button, html [type='button'], [type='reset'], [type='submit'] {
   -webkit-appearance: button;
 }
+=======
+>>>>>>> origin/ducmt
 input[type='submit'], input[type='submit'].button, input[type='submit'], .primary {
   background-color: #446084;
 }
@@ -400,6 +417,7 @@ object-fit: cover;
 .sec_lien_he a {
   color: #353535;
 }
+<<<<<<< HEAD
 .button.is-outline {
   line-height: 2.19em;
 }
@@ -407,6 +425,8 @@ object-fit: cover;
   border: 2px solid currentColor;
 background-color: transparent;
 }
+=======
+>>>>>>> origin/ducmt
 .button.icon {
   margin-left: 0.12em;
 margin-right: 0.12em;
@@ -418,6 +438,7 @@ display: inline-block;
 .button.tooltip {
   opacity: 1;
 }
+<<<<<<< HEAD
 .sec_lien_he .social-icons a {
   margin-right: 10px;
 }
@@ -441,6 +462,8 @@ button i, .button i {
   vertical-align: middle;
 top: -1.5px;
 }
+=======
+>>>>>>> origin/ducmt
 .icon-feed::before {
   content: "\e008";
 }
@@ -505,3 +528,137 @@ height: 100%;
 transition: all .3s;
 fill: currentColor;
 }
+<<<<<<< HEAD
+=======
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    color: #777;
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+.container,
+.full-width .ubermenu-nav,
+.container-width,
+.row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-width,
+.full-width .ubermenu-nav,
+.container,
+.row {
+    max-width: 1080px;
+}
+
+.row,
+.gallery {
+    width: 100%;
+    -js-display: flex;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.row-full-width {
+    max-width: 100% !important;
+}
+
+.row-collapse {
+    padding: 0;
+}
+
+.full-width .ubermenu-nav,
+.container,
+.row {
+    max-width: 1230px;
+}
+
+.container::after,
+.row::after,
+.clearfix::after,
+.clear::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.row.row-collapse {
+    max-width: 1050px;
+}
+
+.row.row-collapse {
+    max-width: 1200px;
+}
+
+.section-bg,
+.section-content {
+    width: 100%;
+}
+
+.section-content {
+    z-index: 1;
+}
+
+.relative {
+    position: relative !important;
+}
+
+@media screen and (min-width:850px){
+  .large-12 {
+    max-width: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+}
+
+}
+
+@media screen and (min-width:850px){
+  :first-child.col .col-inner {
+    margin-left: auto;
+    margin-right: 0px;
+}
+}
+
+embed,
+iframe,
+object {
+    max-width: 100%;
+}
+
+>>>>>>> origin/ducmt

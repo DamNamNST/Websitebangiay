@@ -130,4 +130,54 @@ const About = () => {
   );
 };
 
+<<<<<<< HEAD
 export default About;
+=======
+                    </div>
+
+                </div>
+                <div className=" max-w-7xl mx-auto grid  md:grid-cols-2 grid-cols-1 gap-4 pt-10">
+                    <div className="">
+                    <h1 className=" font-bold text-lg "><FontAwesomeIcon icon={ faTruck} /> Miễn phí giao hàng</h1>
+                        <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh</p>
+                    </div>
+                    <div className="">
+                    <h1 className=" font-bold text-lg "> <FontAwesomeIcon icon={faQuestionCircle} /> GIỚI TâHIỆU</h1>
+                        <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh</p>
+                    </div>
+                    <div className="">
+                        <h1>GIỚI THIỆU</h1>
+                        <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh</p>
+                    </div>
+                    <div className="">
+                        <h1>GIỚI THIỆU</h1>
+                        <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh</p>
+                    </div>
+                    <div className="">
+                        <h1>GIỚI THIỆU</h1>
+                        <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh</p>
+                    </div>
+                    <div className="">
+                        <h1>GIỚI THIỆU</h1>
+                        <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh</p>
+                    </div>
+                    <div className="">
+                        <h1>GIỚI THIỆU</h1>
+                        <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh</p>
+                    </div>
+                    <div className="">
+                        <h1>GIỚI THIỆU</h1>
+                        <p>Chào .mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh</p>
+                    </div>
+                </div>
+
+            </section>
+
+
+
+        </>
+    )
+}
+
+export default About
+>>>>>>> origin/ducmt

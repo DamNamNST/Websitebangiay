@@ -102,12 +102,16 @@ const Header = (props: Props) => {
             </svg>
           </div>
           <div className="logo">
+<<<<<<< HEAD
             <img
               width=""
               height=""
               src="https://scontent.xx.fbcdn.net/v/t1.15752-9/308111893_885385725774440_7698410002652142991_n.png?stp=dst-png_p403x403&_nc_cat=106&ccb=1-7&_nc_sid=aee45a&_nc_ohc=kNM2wV39JeMAX_c2Hp5&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVInPTTa9iyXiaIInuWm3fqRAW6jy8p7u7Uqg_3xyqynqQ&oe=63668FB5"
               alt=""
             />
+=======
+            <img width="" height="" src="https://scontent.fhan14-3.fna.fbcdn.net/v/t1.15752-9/312310449_1180707919470368_4581503676013849018_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=ae9488&_nc_ohc=cnHGL39c38gAX-yla7X&_nc_ht=scontent.fhan14-3.fna&oh=03_AdSBJ2HxWARXhmcXS-SZpeAVko1OAGyUrzfRrCD6tS2dIg&oe=6376EB75" alt="" />
+>>>>>>> origin/ducmt
           </div>
           <div className="cart">
             <div className="pc">
@@ -292,6 +296,7 @@ const Header = (props: Props) => {
           <SingInUp />
         </Modal>
       </section>
+<<<<<<< HEAD
       <section className="bg-[#DCDCDC] hidden">
         <nav className="max-w-6xl mx-auto">
           <ul className="p-3 text-center">
@@ -312,10 +317,22 @@ const Header = (props: Props) => {
                   content={dropdown}
                   trigger="hover"
                 >
+=======
+      <section className='bg-[#DCDCDC] hidden'>
+        <nav className="max-w-6xl mx-auto">
+          <ul className="p-3 text-center">
+            <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
+            <li className="inline-block p-3"><Link to="about">Giới Thiệu</Link></li>
+            <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
+            <li className="inline-block p-3">
+              <Link to="products">
+                <Popover className='pl-3' placement="bottom" content={dropdown} trigger="hover">
+>>>>>>> origin/ducmt
                   Nam
                 </Popover>
               </Link>
             </li>
+<<<<<<< HEAD
             <li className="inline-block p-3">
               <Link to="">Trang chu</Link>
             </li>
@@ -331,6 +348,16 @@ const Header = (props: Props) => {
           </ul>
         </nav>
       </section>
+=======
+            <li className="inline-block p-3"><Link to="/detail">Detail</Link></li>
+            <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
+            <li className="inline-block p-3"><Link to="">Trang chu</Link></li>
+            <li className="inline-block p-3"><Link to="lienhe">Liên Hệ</Link></li>
+          </ul>
+        </nav>
+      </section>
+
+>>>>>>> origin/ducmt
     </>
   );
 };

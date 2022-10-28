@@ -218,4 +218,59 @@ const Footer = (props: Props) => {
   );
 };
 
+<<<<<<< HEAD
 export default Footer;
+=======
+                </div>
+                <div>
+                    <h1 className="text-white font-bold text-lg ">
+                        MENU
+                    </h1>
+                    <div className='grid md:grid-cols-2 grid-cols-3'>
+                        <Link className="text-[#a4a4a4] text-[14px]  mt-4" to="">Trang Chủ1</Link>
+                        <Link className="text-[#a4a4a4] text-[14px]  mt-4" to="">Trang Chủ2</Link>
+                        <Link className="text-[#a4a4a4] text-[14px] mt-4" to="">Trang Chủ3</Link>
+                        <Link className="text-[#a4a4a4] text-[14px] mt-4" to="">Trang Chủ4</Link>
+                        <Link className="text-[#a4a4a4] text-[14px] mt-4" to="">Trang Chủ5</Link>
+                        <Link className="text-[#a4a4a4] text-[14px] mt-4" to="">Trang Ch6</Link>
+                    </div>
+                </div>
+                <div><h1 className="text-white font-bold text-lg ">
+                    MẠNG XÃ HỘI
+                </h1>
+                    <div className="flex mt-4">
+                        <svg className="h-8 w-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+                        <svg className="h-8 w-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+                        <svg className="h-8 w-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+                        <svg className="h-8 w-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+
+                        <svg className="h-8 w-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div className='max-w-7xl mx-auto grid md:grid-cols-3 grid-cols-1 gap-4 pt-10 text-white pb-5'>
+                <h1 className="text-white font-bold text-lg">ĐĂNG KÝ NHẬN THÔNG TIN</h1>
+                <form action="">
+                <input type="" name="" id="email" required placeholder="Email Address" />
+                <input type="submit" value="ĐĂNG KÝ" id="send" />
+                </form>
+                <div className="icona flex" style={{padding:'20px'}}>
+
+                    <img className='w-20' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment1.png" alt="" />
+                    <img className='w-20' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment2.png" alt="" />
+                    <img className='w-20' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment3.png" alt="" />
+                    <img className='w-16' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment4.png" alt="" />
+                    <img className='w-24' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment5.png" alt="" />
+                </div>
+           
+            </div>
+            <div className='max-w-7xl mx-auto text-center text-white'>
+<p>© Bản quyền thuộc về . Thiết kế website FPT</p>
+            </div>
+        </section>
+    )
+}
+
+export default Footer
+>>>>>>> origin/ducmt

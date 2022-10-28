@@ -157,6 +157,7 @@
 }
 
 @media (min-width: 1024px) {
+<<<<<<< HEAD
   .Nav {
     padding-left: 10px;
     padding-right: 10px;
@@ -207,3 +208,59 @@
     display: block;
   }
 }
+=======
+  
+
+    .Nav {
+
+        padding-left: 10px;
+        padding-right: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        margin: 0 auto;
+        background: #000;
+        height: fit-content;
+
+    }
+
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 215px;
+        height: 70px;
+    }
+
+    .logo>img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .Signinup {
+        color: white;
+    }
+
+    .icon {
+        display: none;
+    }
+
+    .icon-cart {
+        display: none;
+    }
+
+    .cart {
+        display: flex;
+        flex-direction: row-reverse;
+        color: white;
+        padding-right: 10px;
+    }
+
+    .pc {
+        display: flex;
+    }
+
+    .hidden {
+        display: block
+    }
+}
+>>>>>>> origin/ducmt
