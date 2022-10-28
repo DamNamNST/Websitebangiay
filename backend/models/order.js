@@ -36,7 +36,10 @@ const orderSchema = new Schema({
         type: Number,
         default: 0
     },
-    
+    voucher: {
+        type: Array,
+        default: []
+    },
 }, { timestamps: true });
 
 orderSchema.index({'$**': 'text'});
