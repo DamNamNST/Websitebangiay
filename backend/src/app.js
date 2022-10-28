@@ -5,6 +5,7 @@ import mongoose from 'mongoose';
 
 
 import categoryRoute from '../routes/Categori';
+import productRoute from '../routes/product';
 import userRoute from '../routes/user'
 
 const app = express();
@@ -17,6 +18,7 @@ app.use(express.json())
 
 // route
 app.use("/api",categoryRoute);
+app.use("/api",productRoute);
 app.use("/api",userRoute)
 
 

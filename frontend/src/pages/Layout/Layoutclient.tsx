@@ -8,7 +8,6 @@ const Layoutclient = () => {
   return (
     <div>
 
-
        <header><Header/></header>
 
        
@@ -19,7 +18,9 @@ const Layoutclient = () => {
 
 
     </div>
-  );
-};
 
-export default Layoutclient;
+
+  )
+}
+
+export default Layoutclient
