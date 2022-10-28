@@ -35,8 +35,13 @@ const items: MenuItem[] = [
   ]),
   getItem('Danh mục 1', 'sub2', <MailOutlined />, [
     getItem(<Link to="/admin">Loại Hàng A</Link>, '5', <LaptopOutlined />),
+<<<<<<< HEAD
     getItem(<Link to="/admin/categories">Loại Hàng B</Link>, '2', <CustomerServiceFilled />),
     getItem(<Link to="/admin/user">Loại Hàng C</Link>, '3', <ApiFilled />),
+=======
+    getItem(<Link to="/admin">Loại Hàng B</Link>, '2', <CustomerServiceFilled />),
+    getItem(<Link to="/admin">Loại Hàng C</Link>, '3', <ApiFilled />),
+>>>>>>> f7a2901c229e46f549d8640ef655815bb784a7a3
   ]),
   getItem('Danh mục 2', 'sub3', <AndroidFilled />, [
     getItem(<Link to="/admin">Danh sách</Link>, '6', <UnorderedListOutlined />),

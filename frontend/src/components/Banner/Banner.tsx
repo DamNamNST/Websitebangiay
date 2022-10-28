@@ -18,23 +18,23 @@ const Banner = (props: Props) => {
   return (
     <div className="max-w-7xl mx-auto ">
       <Slider {...settings}>
-        <div>
+        <div className="md:h-[423px] h-[150px]">
           <img
-            className=""
+            className="h-[100%] w-[100%] "
             src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/slide-2.jpg"
             alt=""
           />
         </div>
-        <div>
+        <div className="md:h-[423px] h-[150px]">
           <img
-            className=""
+              className="h-[100%] w-[100%] "
             src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/slide-5.jpg"
             alt=""
           />
         </div>
-        <div>
+        <div className="md:h-[423px] h-[150px]">
           <img
-            className=""
+             className="h-[100%] w-[100%] "
             src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/slide-1.jpg"
             alt=""
           />

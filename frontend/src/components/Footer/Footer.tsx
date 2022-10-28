@@ -155,69 +155,20 @@ const Footer = (props: Props) => {
               <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
             </svg>
 
-            <svg
-              className="h-8 w-8 text-red-500"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            >
-              {" "}
-              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-            </svg>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div className="max-w-7xl mx-auto grid md:grid-cols-3 grid-cols-1 gap-4 pt-10 text-white pb-5">
-        <h1 className="text-white font-bold text-lg">ĐĂNG KÝ NHẬN THÔNG TIN</h1>
-        <form action="">
-          <input
-            type=""
-            name=""
-            id="email"
-            required
-            placeholder="Email Address"
-          />
-          <input type="submit" value="ĐĂNG KÝ" id="send" />
-        </form>
-        <div className="icona flex">
-          <img
-            className="w-14"
-            src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment1.png"
-            alt=""
-          />
-          <img
-            className="w-14"
-            src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment2.png"
-            alt=""
-          />
-          <img
-            className="w-14"
-            src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment3.png"
-            alt=""
-          />
-          <img
-            className="w-14"
-            src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment4.png"
-            alt=""
-          />
-          <img
-            className="w-14"
-            src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment5.png"
-            alt=""
-          />
-        </div>
-      </div>
-      <div className="max-w-7xl mx-auto text-center text-white">
-        <p>© Bản quyền thuộc về . Thiết kế website FPT</p>
-      </div>
-    </section>
-  );
-};
+                        <svg className="h-8 w-8 text-red-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" /></svg>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div className='max-w-7xl mx-auto grid md:grid-cols-3 grid-cols-1 gap-4 pt-10 text-white pb-5'>
+                <h1 className="text-white font-bold text-lg">ĐĂNG KÝ NHẬN THÔNG TIN</h1>
+                <form action="">
+                <input type="" name="" id="email" required placeholder="Email Address" />
+                <input type="submit" value="ĐĂNG KÝ" id="send" />
+                </form>
+                <div className="icona flex">
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 export default Footer;
 =======
@@ -262,6 +213,13 @@ export default Footer;
                     <img className='w-20' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment3.png" alt="" />
                     <img className='w-16' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment4.png" alt="" />
                     <img className='w-24' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment5.png" alt="" />
+=======
+                    <img className='w-14' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment1.png" alt="" />
+                    <img className='w-14' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment2.png" alt="" />
+                    <img className='w-14' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment3.png" alt="" />
+                    <img className='w-14' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment4.png" alt="" />
+                    <img className='w-14' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment5.png" alt="" />
+>>>>>>> f7a2901c229e46f549d8640ef655815bb784a7a3
                 </div>
            
             </div>
@@ -271,6 +229,9 @@ export default Footer;
         </section>
     )
 }
+<<<<<<< HEAD
 
 export default Footer
 >>>>>>> origin/ducmt
+=======
+>>>>>>> f7a2901c229e46f549d8640ef655815bb784a7a3

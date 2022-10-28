@@ -169,12 +169,12 @@
     height: fit-content;
   }
 
-  .logo {
-    margin-left: auto;
-    margin-right: auto;
-    width: 125px;
-    height: 70px;
-  }
+    .logo {
+        margin-left: auto;
+        margin-right: auto;
+        width: 125px;
+        height: 70px;
+    }
 
   .logo > img {
     width: 100%;
