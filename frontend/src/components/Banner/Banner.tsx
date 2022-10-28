@@ -1,9 +1,10 @@
-import React from 'react'
-import Slider from 'react-slick';
-import "slick-carousel/slick/slick.css"; 
+import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-type Props = {}
 
+import './Banner.css'
+type Props = {}
 const Banner = (props: Props) => {
     var settings = {
         // dots: true,
@@ -13,20 +14,34 @@ const Banner = (props: Props) => {
         slidesToScroll: 1,
         autoplay:true
       };
-  return (
-    <div className="max-w-7xl mx-auto "><Slider {...settings}>
-    <div>
-      <img className="" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/slide-2.jpg" alt="" />
-    </div>
-    <div>
-    <img className="" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/slide-5.jpg" alt="" />
-    </div>
-    <div>
-    <img className="" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/slide-1.jpg" alt="" />
-    </div>
- 
-  </Slider></div>
-  )
-}
 
-export default Banner
+  return (
+    <div className="max-w-7xl mx-auto ">
+      <Slider {...settings}>
+        <div className="md:h-[423px] h-[150px]">
+          <img
+            className="h-[100%] w-[100%] "
+            src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/slide-2.jpg"
+            alt=""
+          />
+        </div>
+        <div className="md:h-[423px] h-[150px]">
+          <img
+              className="h-[100%] w-[100%] "
+            src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/slide-5.jpg"
+            alt=""
+          />
+        </div>
+        <div className="md:h-[423px] h-[150px]">
+          <img
+             className="h-[100%] w-[100%] "
+            src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/slide-1.jpg"
+            alt=""
+          />
+        </div>
+      </Slider>
+    </div>
+  );
+};
+
+export default Banner;
