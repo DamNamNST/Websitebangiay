@@ -1,7 +1,7 @@
 import { Router } from "express";
 import { create, list, read, remove, update } from "../controllers/favoritesProduct";
 import { userById } from "../controllers/user";
-import { isAuth, requireSignin } from "../middlewares/checkAuth";
+import { isAuth, requireSignin } from "../middlewares/checkUser";
 
 const router = Router();
 
