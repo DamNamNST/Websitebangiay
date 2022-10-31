@@ -65,7 +65,10 @@ export const userById = async (req, res, next, id) => {
         req.profile = user;
         next();
     } catch (error) {
-        
+        res.status(400).json({
+            message: "Không tìm thấy User",
+            error
+        });
     }
 }
 // API create

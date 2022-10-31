@@ -1,11 +1,45 @@
 
 import React from 'react'
 import '../pages/detail/detail.css'
-import './detail/star.js'
-import './detail/detail.js'
-import { BiChevronsLeft,BiChevronsRight } from "react-icons/bi";
+import { BiChevronsLeft, BiChevronsRight } from "react-icons/bi";
+import Slider from 'react-slick';
 type Props = {}
 
+var Slide = {
+  // dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+};
 const DetailProduct = (props: Props) => {
   return (
     <>
@@ -15,11 +49,11 @@ const DetailProduct = (props: Props) => {
             <div className="product-gallery large-6 col"> tối code lại ở trong này và dưới
               <div>
                 <div className="main2">
-                    <img className='img-feature' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2018/10/logo-vcb.jpg" alt="" />
-                    <div className='control prev'><BiChevronsLeft /></div>
-                    <div className='control next'> 
+                  <img className='img-feature' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2018/10/logo-vcb.jpg" alt="" />
+                  <div className='control prev'><BiChevronsLeft /></div>
+                  <div className='control next'>
                     <i className='bx bxs-chevrons-right'><BiChevronsRight /></i>
-                    </div>
+                  </div>
                 </div>
                 <div className="list-image">
                   <div><img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-6-100x100.jpg" alt="" /></div>
@@ -27,7 +61,7 @@ const DetailProduct = (props: Props) => {
                   <div><img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-6-100x100.jpg" alt="" /></div>
                   <div><img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-6-100x100.jpg" alt="" /></div>
                   <div><img src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/kid-6-100x100.jpg" alt="" /></div>
-                  </div>
+                </div>
               </div>
               {/* .product-thumbnails */}
             </div>
@@ -517,25 +551,31 @@ const DetailProduct = (props: Props) => {
             <div className="related related-products-wrapper product-section">
               <h3 className="product-section-title container-width product-section-title-related pt-half pb-half uppercase">
                 Sản phẩm tương tự  </h3>
-              <div className=" large-columns-5 medium-columns-3 small-columns-2 row-small slider row-slider slider-nav-reveal slider-nav-push flickity-enabled is-draggable" data-flickity-options="{&quot;imagesLoaded&quot;: true, &quot;groupCells&quot;: &quot;100%&quot;, &quot;dragThreshold&quot; : 5, &quot;cellAlign&quot;: &quot;left&quot;,&quot;wrapAround&quot;: true,&quot;prevNextButtons&quot;: true,&quot;percentPosition&quot;: true,&quot;pageDots&quot;: false, &quot;rightToLeft&quot;: false, &quot;autoPlay&quot; : false}" tabIndex={0}>
-                <div className="flickity-viewport" style={{ height: '310.05px', touchAction: 'pan-y' }}><div className="flickity-slider" style={{ left: 0, transform: 'translateX(-100%)' }}><div className="product-small col has-hover post-897 product type-product status-publish has-post-thumbnail product_cat-chuck-07s-nu product_cat-nu instock shipping-taxable purchasable product-type-simple" aria-selected="false" style={{ position: 'absolute', left: '160%' }}>
-                  <div className="col-inner">
-                    <div className="badge-container absolute left top z-1">
-                    </div>
-                    <div className="product-small box ">
-                      <div className="box-image">
-                        <div className="image-fade_in_back">
-                          <a href="http://mauweb.monamedia.net/converse/san-pham/chuck-70-archive-prints-hi-2/">
-                            <img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-chuck-07-300x225.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" />				</a>
-                        </div>
-                      </div>{/* box-image */}
-                      <div className="box-text box-text-products text-center grid-style-2">
-                        <div className="title-wrapper"><p className="name product-title"><a href="http://mauweb.monamedia.net/converse/san-pham/chuck-70-archive-prints-hi-2/">Chuck 70 Archive Prints Hi</a></p></div><div className="price-wrapper">
-                          <span className="price"><span className="woocommerce-Price-amount amount">1,800,000&nbsp;<span className="woocommerce-Price-currencySymbol">₫</span></span></span>
-                        </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=897" rel="nofollow" data-product_id={897} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
-                    </div>{/* box */}
-                  </div>{/* .col-inner */}
-                </div>
+
+              <div className=" large-columns-5 medium-columns-3 small-columns-2 row-small">
+
+                <div className="flickity-viewport" style={{ height: '310.05px', touchAction: 'pan-y' }}><div className="flickity-slider" style={{ left: 0, transform: 'translateX(-100%)' }}>
+                  <Slider  {...Slide}>
+
+                  </Slider>
+                  <div className="product-small col has-hover post-897 product type-product status-publish has-post-thumbnail product_cat-chuck-07s-nu product_cat-nu instock shipping-taxable purchasable product-type-simple" aria-selected="false" style={{ position: 'absolute', left: '160%' }}>
+                    <div className="col-inner">
+                      <div className="badge-container absolute left top z-1">
+                      </div>
+                      <div className="product-small box ">
+                        <div className="box-image">
+                          <div className="image-fade_in_back">
+                            <a href="http://mauweb.monamedia.net/converse/san-pham/chuck-70-archive-prints-hi-2/">
+                              <img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-chuck-07-300x225.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" />				</a>
+                          </div>
+                        </div>{/* box-image */}
+                        <div className="box-text box-text-products text-center grid-style-2">
+                          <div className="title-wrapper"><p className="name product-title"><a href="http://mauweb.monamedia.net/converse/san-pham/chuck-70-archive-prints-hi-2/">Chuck 70 Archive Prints Hi</a></p></div><div className="price-wrapper">
+                            <span className="price"><span className="woocommerce-Price-amount amount">1,800,000&nbsp;<span className="woocommerce-Price-currencySymbol">₫</span></span></span>
+                          </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=897" rel="nofollow" data-product_id={897} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
+                      </div>{/* box */}
+                    </div>{/* .col-inner */}
+                  </div>
                   <div className="product-small col has-hover post-904 product type-product status-publish has-post-thumbnail product_cat-classic-nu product_cat-nu instock shipping-taxable purchasable product-type-simple" aria-selected="false" style={{ position: 'absolute', left: '180%' }}>
                     <div className="col-inner">
                       <div className="badge-container absolute left top z-1">
@@ -559,7 +599,8 @@ const DetailProduct = (props: Props) => {
                           </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=904" rel="nofollow" data-product_id={904} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
                       </div>{/* box */}
                     </div>{/* .col-inner */}
-                  </div><div className="product-small col has-hover post-903 product type-product status-publish has-post-thumbnail product_cat-classic-nu product_cat-nu last instock shipping-taxable purchasable product-type-simple" aria-selected="false" style={{ position: 'absolute', left: '40%' }}>
+                  </div>
+                  <div className="product-small col has-hover post-903 product type-product status-publish has-post-thumbnail product_cat-classic-nu product_cat-nu last instock shipping-taxable purchasable product-type-simple" aria-selected="false" style={{ position: 'absolute', left: '40%' }}>
                     <div className="col-inner">
                       <div className="badge-container absolute left top z-1">
                       </div>
@@ -582,7 +623,8 @@ const DetailProduct = (props: Props) => {
                           </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=903" rel="nofollow" data-product_id={903} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
                       </div>{/* box */}
                     </div>{/* .col-inner */}
-                  </div><div className="product-small col has-hover post-916 product type-product status-publish has-post-thumbnail product_cat-nu product_cat-sunbaked-nu first instock shipping-taxable purchasable product-type-simple" aria-selected="false" style={{ position: 'absolute', left: '60%' }}>
+                  </div>
+                  <div className="product-small col has-hover post-916 product type-product status-publish has-post-thumbnail product_cat-nu product_cat-sunbaked-nu first instock shipping-taxable purchasable product-type-simple" aria-selected="false" style={{ position: 'absolute', left: '60%' }}>
                     <div className="col-inner">
                       <div className="badge-container absolute left top z-1">
                       </div>
@@ -605,7 +647,8 @@ const DetailProduct = (props: Props) => {
                           </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=916" rel="nofollow" data-product_id={916} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
                       </div>{/* box */}
                     </div>{/* .col-inner */}
-                  </div><div className="product-small col has-hover post-923 product type-product status-publish has-post-thumbnail product_cat-nu product_cat-psy-kicks-nu instock shipping-taxable purchasable product-type-simple" aria-selected="false" style={{ position: 'absolute', left: '80%' }}>
+                  </div>
+                  <div className="product-small col has-hover post-923 product type-product status-publish has-post-thumbnail product_cat-nu product_cat-psy-kicks-nu instock shipping-taxable purchasable product-type-simple" aria-selected="false" style={{ position: 'absolute', left: '80%' }}>
                     <div className="col-inner">
                       <div className="badge-container absolute left top z-1">
                       </div>
@@ -628,7 +671,8 @@ const DetailProduct = (props: Props) => {
                           </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=923" rel="nofollow" data-product_id={923} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
                       </div>{/* box */}
                     </div>{/* .col-inner */}
-                  </div><div className="product-small col has-hover post-902 product type-product status-publish has-post-thumbnail product_cat-classic-nu product_cat-nu instock shipping-taxable purchasable product-type-simple is-selected" aria-selected="true" style={{ position: 'absolute', left: '100%' }}>
+                  </div>
+                  <div className="product-small col has-hover post-902 product type-product status-publish has-post-thumbnail product_cat-classic-nu product_cat-nu instock shipping-taxable purchasable product-type-simple is-selected" aria-selected="true" style={{ position: 'absolute', left: '100%' }}>
                     <div className="col-inner">
                       <div className="badge-container absolute left top z-1">
                       </div>
@@ -651,7 +695,8 @@ const DetailProduct = (props: Props) => {
                           </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=902" rel="nofollow" data-product_id={902} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
                       </div>{/* box */}
                     </div>{/* .col-inner */}
-                  </div><div className="product-small col has-hover post-901 product type-product status-publish has-post-thumbnail product_cat-classic-nu product_cat-nu last instock shipping-taxable purchasable product-type-simple is-selected" aria-selected="true" style={{ position: 'absolute', left: '120%' }}>
+                  </div>
+                  <div className="product-small col has-hover post-901 product type-product status-publish has-post-thumbnail product_cat-classic-nu product_cat-nu last instock shipping-taxable purchasable product-type-simple is-selected" aria-selected="true" style={{ position: 'absolute', left: '120%' }}>
                     <div className="col-inner">
                       <div className="badge-container absolute left top z-1">
                       </div>
@@ -674,7 +719,8 @@ const DetailProduct = (props: Props) => {
                           </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=901" rel="nofollow" data-product_id={901} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
                       </div>{/* box */}
                     </div>{/* .col-inner */}
-                  </div><div className="product-small col has-hover post-922 product type-product status-publish has-post-thumbnail product_cat-nu product_cat-psy-kicks-nu first instock shipping-taxable purchasable product-type-simple is-selected" aria-selected="true" style={{ position: 'absolute', left: '140%' }}>
+                  </div>
+                  <div className="product-small col has-hover post-922 product type-product status-publish has-post-thumbnail product_cat-nu product_cat-psy-kicks-nu first instock shipping-taxable purchasable product-type-simple is-selected" aria-selected="true" style={{ position: 'absolute', left: '140%' }}>
                     <div className="col-inner">
                       <div className="badge-container absolute left top z-1">
                       </div>

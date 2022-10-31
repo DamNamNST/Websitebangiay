@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { useEffect, useState } from 'react';
 import './App.css';
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import Homepage from './pages/Homepage';
 import Layoutclient from './pages/Layout/Layoutclient';
 import About from './pages/About/About';
@@ -30,6 +30,10 @@ import BlogEdit from './pages/admin/Blog/BlogEdit';
 import Comment from './pages/admin/Comment/Comment';
 import CommentAdd from './pages/admin/Comment/CommentAdd';
 import CommentEdit from './pages/admin/Comment/CommentEdit';
+import ListProduct from './pages/admin/Product/product';
+import AddProduct from './pages/admin/Product/add';
+import EditProduct from './pages/admin/Product/edit';
+import PrivateRoute from './midlerware/PrivateRoute';
 
 function App() {
   const [user, setUser] = useState<IUsers[]>([])
@@ -62,8 +66,13 @@ function App() {
         <Route path='cart' element={<Cart />} />
         <Route path='pay' element={<Pay />} />
       </Route>
-      <Route path="admin" element={<AdminLayout />}>
-        {/* <Route index element={<Dashbroad />} /> */}
+      <Route path="admin" element={<PrivateRoute><AdminLayout /></PrivateRoute>}>
+      <Route index element={<Navigate to={"product"} />} />
+        <Route path='product'>
+              <Route index element={<ListProduct />} />
+              <Route path='add' element={<AddProduct />} />
+              <Route path='edit/:id' element={<EditProduct />} />
+            </Route>
         <Route path="categories">
           <Route index element={<Categories categories={categories} />} />
           <Route path="add" element={<CategoriesAdd />} />
