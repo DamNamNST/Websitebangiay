@@ -26,7 +26,7 @@ import Comment from "./pages/admin/Comment/Comment";
 import BlogAdd from "./pages/admin/Blog/BlogAdd";
 import BlogEdit from "./pages/admin/Blog/BlogEdit";
 import Blog from "./pages/admin/Blog/Blog";
-import UserEdit from "./pages/admin/User/UserEdit";
+
 
 import NewsDetail from "./pages/News/Newsdetail";
 import NewsPage from "./pages/News/News";
@@ -62,7 +62,7 @@ function App() {
         <Route path="user">
           <Route index element={<Users />} />
       
-          <Route path=":id/edit" element={<UserEdit />} />
+     
         </Route>
         <Route path='Blog'>
           <Route index element={<Blog />} />
