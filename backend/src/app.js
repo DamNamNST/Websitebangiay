@@ -5,7 +5,11 @@ import mongoose from 'mongoose';
 
 // import orderRouter from "../routes/order";
 import categoryRoute from '../routes/Categori';
+<<<<<<< HEAD
 import productRoute from '../routes/product';
+=======
+import bannerRoute from '../routes/Banner';
+>>>>>>> bc3bcb4b656be2435ef028eb0c06314a6a5f743c
 import userRoute from '../routes/user'
 
 const app = express();
@@ -18,7 +22,11 @@ app.use(express.json())
 
 // route
 app.use("/api",categoryRoute);
+<<<<<<< HEAD
 app.use("/api",productRoute);
+=======
+app.use("/api",bannerRoute);
+>>>>>>> bc3bcb4b656be2435ef028eb0c06314a6a5f743c
 app.use("/api",userRoute)
 // app.use("/api", orderRouter);
 

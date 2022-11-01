@@ -1,5 +1,6 @@
-import  instance  from "./instance";
 import { IUsers } from "../models/User";
+import  instance  from "./instance";
+
 
 export const listUser =() =>{
     return instance.get(`/users`)

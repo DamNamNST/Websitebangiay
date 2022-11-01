@@ -1,8 +1,6 @@
 import { ButtonComponent } from '../../../components/button/button'
 import { PathComponent } from '../../../components/Path/Path'
 import { ICategori } from '../../../models/Categories'
-import { TDComponent } from '../components/td'
-import { THComponent } from '../components/th'
 import { Space, Table, Tag } from 'antd';
 import React from 'react';
 

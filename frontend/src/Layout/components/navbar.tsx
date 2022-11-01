@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 
 import { IconCategories } from '../../components/Icons/IconCategory'
 import { IconDashboard } from '../../components/Icons/IconDashboard'
