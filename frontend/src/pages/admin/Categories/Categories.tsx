@@ -1,6 +1,5 @@
-import { ButtonComponent } from '../../../components/button/button'
-import { PathComponent } from '../../../components/Path/Path'
-import { ICategori } from '../../../models/Categories'
+
+
 import { Space, Table, Tag } from 'antd';
 import React from 'react';
 
@@ -42,7 +41,7 @@ interface DataType {
   ];
   
 type Props = {
-    categories: ICategori[];
+
 }
 
 const Categories = (props: Props) => {

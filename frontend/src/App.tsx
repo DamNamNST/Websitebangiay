@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Homepage from "./pages/Homepage";
@@ -7,41 +7,34 @@ import "antd/dist/antd.css";
 import About from "./pages/About/About";
 import Products from "./pages/ProductList/products";
 import Lienhe from "./pages/lienhe";
-import { ICategori } from "./models/Categories";
-import { IUsers } from "./models/User";
+
 
 
 import Cart from "./pages/Website/Cart/Cart";
 import Pay from "./pages/Website/Pay/Pay";
 import ErrorsWeb from "./pages/404/errorsWeb";
-import NewsPage from "./pages/News/News";
-import NewsDetail from "./pages/News/Newsdetail";
-import Purchased from "./pages/Purchased";
 
-
-import { listCategory } from "./api/Categories";
 import Layoutclient from "./Layout/Layoutclient";
-import { listUser } from "./api/User";
+import AdminLayout from "./Layout/AdminLayout";
+import Categories from "./pages/admin/Categories/Categories";
+
+
+import Users from "./pages/admin/User/User";
+import CommentEdit from "./pages/admin/Comment/CommentEdit";
+import CommentAdd from "./pages/admin/Comment/CommentAdd";
+import Comment from "./pages/admin/Comment/Comment";
+import BlogAdd from "./pages/admin/Blog/BlogAdd";
+import BlogEdit from "./pages/admin/Blog/BlogEdit";
+import Blog from "./pages/admin/Blog/Blog";
+import UserEdit from "./pages/admin/User/UserEdit";
+
+import NewsDetail from "./pages/News/Newsdetail";
+import NewsPage from "./pages/News/News";
+
+
 
 function App() {
-  const [user, setUser] = useState<IUsers[]>([]);
-  const [categories, setCategories] = useState<ICategori[]>([]);
 
-  useEffect(() => {
-    const getUser = async () => {
-      const { data } = await listUser();
-      setUser(data);
-    };
-    getUser();
-  }, []);
-
-  useEffect(() => {
-    const getCategories = async () => {
-      const { data } = await listCategory();
-      setCategories(data);
-    };
-    getCategories();
-  }, []);
 
   return (
     <Routes>
@@ -51,14 +44,37 @@ function App() {
         <Route path={"/products"} element={<Products />} />
         <Route path={"/lienhe"} element={<Lienhe />} />
         <Route path="news">
-          <Route index element={<NewsPage />} />
+          <Route index element={<NewsPage  />} />
           {/* <Route path=":_id" element={< NewsDetail/>} /> */}
         </Route>
         <Route path={"/newsdetail"} element={<NewsDetail />} />
         <Route path="cart" element={<Cart />} />
         <Route path="pay" element={<Pay />} />
-        <Route path="purchased" element={<Purchased />} />
+
       </Route>
+      <Route path="admin" element={<AdminLayout />}>
+        {/* <Route index element={<Dashbroad />} /> */}
+        <Route path="categories">
+          <Route index element={<Categories />} />
+        
+     
+        </Route>
+        <Route path="user">
+          <Route index element={<Users />} />
+      
+          <Route path=":id/edit" element={<UserEdit />} />
+        </Route>
+        <Route path='Blog'>
+          <Route index element={<Blog />} />
+          <Route path='add' element={<BlogAdd />} />
+          <Route path='edit/:id' element={<BlogEdit />} />
+        </Route>
+        <Route path='comment'>
+          <Route index element={<Comment />} />
+          <Route path='add' element={<CommentAdd />} />
+          <Route path='edit/:id' element={<CommentEdit />} />
+        </Route>
+        </Route>
       <Route path="*" element={<ErrorsWeb />} />
     </Routes>
   );
