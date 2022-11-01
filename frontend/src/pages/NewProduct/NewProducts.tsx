@@ -11,9 +11,18 @@ const NewProducts = (props: Props) => {
        
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         responsive: [
+            {
+                breakpoint: 1448,
+                settings: {
+                  slidesToShow: 4,
+                  slidesToScroll: 4,
+                  infinite: true,
+                 
+                }
+              },
             {
               breakpoint: 1024,
               settings: {
@@ -81,7 +90,7 @@ const NewProducts = (props: Props) => {
                                     <div className="flex justify-center"><img className="" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-1.jpg" alt="" /></div>
 
                                     <button className='title'>Chuck Taylor Classic</button>
-                                    <p className='price'>1,250,000 ₫</p>
+                                    <p className='price'>1,350,000 ₫</p>
                                     <button className='Xemproduct'>Xem Sản Phẩm</button>
                                 </div>
                             </div>
@@ -90,7 +99,7 @@ const NewProducts = (props: Props) => {
                                     <div className="flex justify-center"><img className="" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-1.jpg" alt="" /></div>
 
                                     <button className='title'>Chuck Taylor Classic</button>
-                                    <p className='price'>1,250,000 ₫</p>
+                                    <p className='price'>1,450,000 ₫</p>
                                     <button className='Xemproduct'>Xem Sản Phẩm</button>
                                 </div>
                             </div>
@@ -99,7 +108,7 @@ const NewProducts = (props: Props) => {
                                     <div className="flex justify-center"><img className="" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-1.jpg" alt="" /></div>
 
                                     <button className='title'>Chuck Taylor Classic</button>
-                                    <p className='price'>1,250,000 ₫</p>
+                                    <p className='price'>1,550,000 ₫</p>
                                     <button className='Xemproduct'>Xem Sản Phẩm</button>
                                 </div>
                             </div>

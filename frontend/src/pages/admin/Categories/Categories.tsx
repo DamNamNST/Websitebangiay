@@ -3,40 +3,84 @@ import { PathComponent } from '../../../components/Path/Path'
 import { ICategori } from '../../../models/Categories'
 import { TDComponent } from '../components/td'
 import { THComponent } from '../components/th'
+import { Space, Table, Tag } from 'antd';
+import React from 'react';
 
+const { Column, ColumnGroup } = Table;
+interface DataType {
+    key: React.Key;
+    firstName: string;
+    lastName: string;
+    age: number;
+    address: string;
+    tags: string[];
+  }
+  
+  const data: DataType[] = [
+    {
+      key: '1',
+      firstName: 'John',
+      lastName: 'Brown',
+      age: 32,
+      address: 'New York No. 1 Lake Park',
+      tags: ['nice', 'developer'],
+    },
+    {
+      key: '2',
+      firstName: 'Jim',
+      lastName: 'Green',
+      age: 42,
+      address: 'London No. 1 Lake Park',
+      tags: ['loser'],
+    },
+    {
+      key: '3',
+      firstName: 'Joe',
+      lastName: 'Black',
+      age: 32,
+      address: 'Sidney No. 1 Lake Park',
+      tags: ['cool', 'teacher'],
+    },
+  ];
+  
 type Props = {
     categories: ICategori[];
 }
 
 const Categories = (props: Props) => {
     return (
-        <div className="table w-full p-2">
-            <div className="flex flex-nowrap p-3 m-2 bg-neutral-200">
-                <PathComponent name1='Dashboard' name2='Categories' />
-            </div>
-            <table className="w-full border">
-                <thead>
-                    <tr className="bg-gray-50 border-b">
-                        <THComponent children="Id" />
-                        <THComponent children="Name" />
-                        <THComponent children="Action" />
-                    </tr>
-                </thead>
-                <tbody>
-                    {props.categories.map((item, index) => {
-                        return <tr className="bg-gray-100 text-center border-b text-sm text-gray-600">
-                            <TDComponent children={index+1} />
-                            <TDComponent children={item.name} />
-                            <TDComponent children={<>
-                                <ButtonComponent customStyle="bg-blue-500 text-white" >Edit</ButtonComponent>
-                                <ButtonComponent customStyle="bg-red-500 text-white " >Remove</ButtonComponent>
-                                </>} />
-                        </tr>
-                    })}
-
-                </tbody>
-            </table>
-        </div>
+        <Table dataSource={data}>
+        <ColumnGroup title="Name">
+          <Column title="First Name" dataIndex="firstName" key="firstName" />
+          <Column title="Last Name" dataIndex="lastName" key="lastName" />
+        </ColumnGroup>
+        <Column title="Age" dataIndex="age" key="age" />
+        <Column title="Address" dataIndex="address" key="address" />
+        <Column
+          title="Tags"
+          dataIndex="tags"
+          key="tags"
+          render={(tags: string[]) => (
+            <>
+              {tags.map(tag => (
+                <Tag color="blue" key={tag}>
+                  {tag}
+                </Tag>
+              ))}
+            </>
+          )}
+        />
+        <Column
+          title="Action"
+          key="action"
+          render={(_: any, record: DataType) => (
+            <Space size="middle">
+              <a>Invite {record.lastName}</a>
+              <a>Delete</a>
+            </Space>
+          )}
+        />
+      </Table>
     )
 }
 

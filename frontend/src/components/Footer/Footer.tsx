@@ -66,13 +66,13 @@ const Footer = (props: Props) => {
                 <input type="" name="" id="email" required placeholder="Email Address" />
                 <input type="submit" value="ĐĂNG KÝ" id="send" />
                 </form>
-                <div className="icona flex">
+                <div className="icona flex" style={{padding:'20px'}}>
 
-                    <img className='w-14' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment1.png" alt="" />
-                    <img className='w-14' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment2.png" alt="" />
-                    <img className='w-14' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment3.png" alt="" />
-                    <img className='w-14' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment4.png" alt="" />
-                    <img className='w-14' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment5.png" alt="" />
+                    <img className='w-20' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment1.png" alt="" />
+                    <img className='w-20' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment2.png" alt="" />
+                    <img className='w-20' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment3.png" alt="" />
+                    <img className='w-16' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment4.png" alt="" />
+                    <img className='w-24' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/payment5.png" alt="" />
                 </div>
            
             </div>

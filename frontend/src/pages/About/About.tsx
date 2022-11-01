@@ -69,7 +69,7 @@ const About = (props: Props) => {
                     </div>
                     <div className="">
                         <h1>GIỚI THIỆU</h1>
-                        <p>Chào mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh</p>
+                        <p>Chào .mừng bạn đến với ngôi nhà Converse! Tại đây, mỗi một dòng chữ, mỗi chi tiết và hình ảnh đều là những bằng chứng mang dấu ấn lịch sử Converse 100 năm, và đang không ngừng phát triển lớn mạnh</p>
                     </div>
                 </div>
 

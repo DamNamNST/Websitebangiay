@@ -3,7 +3,7 @@ import cors from 'cors';
 import morgan from 'morgan';
 import mongoose from 'mongoose';
 
-
+// import orderRouter from "../routes/order";
 import categoryRoute from '../routes/Categori';
 import productRoute from '../routes/product';
 import userRoute from '../routes/user'
@@ -23,6 +23,7 @@ app.use("/api", contactRoute);
 app.use("/api",newsRoute)
 app.use("/api",productRoute);
 app.use("/api",userRoute)
+// app.use("/api", orderRouter);
 
 
 // connnect database

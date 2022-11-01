@@ -17,7 +17,7 @@ const Pay = (props: Props) => {
     )
     const cash = () => {
         return (
-            <ul className="text-grey-darkest py-2 ">
+            <ul className="text-grey-darkest py-2 list-none ">
                 <li className="pb-2">
                     Trả tiền mặt khi giao hàng.
                 </li>
@@ -26,7 +26,7 @@ const Pay = (props: Props) => {
     }
     const transfer = () => {
         return (
-            <ul className="text-grey-darkest py-3 ">
+            <ul className="text-grey-darkest py-3 list-none">
                 <li className="pb-2">
                     Thực hiện thanh toán vào ngay tài khoản ngân hàng của chúng tôi. Vui lòng sử dụng Mã đơn hàng của bạn trong phần Nội dung thanh toán. Đơn hàng sẽ đươc giao sau khi tiền đã chuyển.
                 </li>
@@ -57,11 +57,11 @@ const Pay = (props: Props) => {
             <ListLogin />
             <ListPromoCode />
             <div className="md:flex  my-10 sm:flex-none ">
-                <div className="md:w-3/4 bg-white px-10    ">
-                    <form className='border-t-2 py-10'>
-                        <div className="grid gap-6 mb-6 lg:grid-cols-2">
+                <div className="md:w-3/4 bg-white  pr-4  ">
+                    <form className='border-t-2 pr-4 '>
+                        <div className="grid gap-6 mb-6 lg:grid-cols-2 mt-3">
                             <div>
-                                <InputComponent children="Họ" type="text" placeholder='Nguyễn, Trần, Lê, ...' />
+                                <InputComponent children="Họ" type="text" placeholder='Nguyễn, Trần, Lê,Mai ...' />
                             </div>
                             <div>
                                 <InputComponent children="Tên" type="text" placeholder=' ...' />
@@ -152,7 +152,7 @@ const Pay = (props: Props) => {
                     </div>
                     <div>
                         <label className="inline-flex items-center">
-                            <input type="radio" onClick={(e: any) => handldClick(e)} className="form-radio text-indigo-600" name="payment1" checked={transferForm.payment1} />
+                            <input type="radio" onClick={(e: any) => handldClick(e)} className="form-radio text-indigo-600 mt-4" name="payment1" checked={transferForm.payment1} />
                             <span className="text-grey-darkest font-thin text-xl  ml-2 py-3">
                                 Trả tiền mặt khi nhận hàng
                             </span>
@@ -161,7 +161,7 @@ const Pay = (props: Props) => {
                     </div>
                     <div>
                         <label className="inline-flex items-center">
-                            <input type="radio" onClick={(e: any) => handldClick(e)} className="form-radio text-green-500" name="payment2" checked={transferForm.payment2} />
+                            <input type="radio" onClick={(e: any) => handldClick(e)} className="form-radio text-green-500 mt-3" name="payment2" checked={transferForm.payment2} />
                             <span className="text-grey-darkest font-thin text-xl ml-2"> Chuyển khoản ngân hàng</span>
                         </label>
                         {transferForm.payment2 && transfer()}

@@ -1,24 +1,31 @@
-
 import React from 'react'
-import '../pages/detail/detail.css'
+import '../detail/detail.css'
 import { BiChevronsLeft, BiChevronsRight } from "react-icons/bi";
 import Slider from 'react-slick';
 type Props = {}
+const settings = {
 
-var Slide = {
-  // dots: true,
-  infinite: false,
-  speed: 300,
-  slidesToShow: 4,
-  slidesToScroll: 4,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 5,
+  slidesToScroll: 1,
   responsive: [
+    {
+      breakpoint: 1448,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        infinite: true,
+
+      }
+    },
     {
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
+
       }
     },
     {
@@ -31,7 +38,7 @@ var Slide = {
     {
       breakpoint: 480,
       settings: {
-        slidesToShow: 1,
+        slidesToShow: 2,
         slidesToScroll: 1
       }
     }
@@ -40,13 +47,17 @@ var Slide = {
     // instead of a settings object
   ]
 };
+
 const DetailProduct = (props: Props) => {
   return (
     <>
+    <script>
+    </script>
       <div className="product-container">
         <div className="product-main">
           <div className="row content-row mb-0">
             <div className="product-gallery large-6 col"> tối code lại ở trong này và dưới
+            
               <div>
                 <div className="main2">
                   <img className='img-feature' src="http://mauweb.monamedia.net/converse/wp-content/uploads/2018/10/logo-vcb.jpg" alt="" />
@@ -551,210 +562,68 @@ const DetailProduct = (props: Props) => {
             <div className="related related-products-wrapper product-section">
               <h3 className="product-section-title container-width product-section-title-related pt-half pb-half uppercase">
                 Sản phẩm tương tự  </h3>
+                <div className="max-w-7xl mx-auto ">
+                        <Slider {...settings}>
+                            <div>
+                                <div className="boxproduct  text-center">
+                                    <div className="flex justify-center"><img className="" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-1.jpg" alt="" /></div>
 
-              <div className=" large-columns-5 medium-columns-3 small-columns-2 row-small">
+                                    <button className='title'>Chuck Taylor Classic</button>
+                                    <p className='price'>1,250,000 ₫</p>
+                                    <button className='Xemproduct'>Xem Sản Phẩm</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="boxproduct  text-center">
+                                    <div className="flex justify-center"><img className="" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-1.jpg" alt="" /></div>
 
-                <div className="flickity-viewport" style={{ height: '310.05px', touchAction: 'pan-y' }}><div className="flickity-slider" style={{ left: 0, transform: 'translateX(-100%)' }}>
-                  <Slider  {...Slide}>
+                                    <button className='title'>Chuck Taylor Classic</button>
+                                    <p className='price'>1,250,000 ₫</p>
+                                    <button className='Xemproduct'>Xem Sản Phẩm</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="boxproduct  text-center">
+                                    <div className="flex justify-center"><img className="" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-1.jpg" alt="" /></div>
 
-                  </Slider>
-                  <div className="product-small col has-hover post-897 product type-product status-publish has-post-thumbnail product_cat-chuck-07s-nu product_cat-nu instock shipping-taxable purchasable product-type-simple" aria-selected="false" style={{ position: 'absolute', left: '160%' }}>
-                    <div className="col-inner">
-                      <div className="badge-container absolute left top z-1">
-                      </div>
-                      <div className="product-small box ">
-                        <div className="box-image">
-                          <div className="image-fade_in_back">
-                            <a href="http://mauweb.monamedia.net/converse/san-pham/chuck-70-archive-prints-hi-2/">
-                              <img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-chuck-07-300x225.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" />				</a>
-                          </div>
-                        </div>{/* box-image */}
-                        <div className="box-text box-text-products text-center grid-style-2">
-                          <div className="title-wrapper"><p className="name product-title"><a href="http://mauweb.monamedia.net/converse/san-pham/chuck-70-archive-prints-hi-2/">Chuck 70 Archive Prints Hi</a></p></div><div className="price-wrapper">
-                            <span className="price"><span className="woocommerce-Price-amount amount">1,800,000&nbsp;<span className="woocommerce-Price-currencySymbol">₫</span></span></span>
-                          </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=897" rel="nofollow" data-product_id={897} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
-                      </div>{/* box */}
-                    </div>{/* .col-inner */}
-                  </div>
-                  <div className="product-small col has-hover post-904 product type-product status-publish has-post-thumbnail product_cat-classic-nu product_cat-nu instock shipping-taxable purchasable product-type-simple" aria-selected="false" style={{ position: 'absolute', left: '180%' }}>
-                    <div className="col-inner">
-                      <div className="badge-container absolute left top z-1">
-                      </div>
-                      <div className="product-small box ">
-                        <div className="box-image">
-                          <div className="image-fade_in_back">
-                            <a href="http://mauweb.monamedia.net/converse/san-pham/chuck-taylor-classic-13/">
-                              <img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-4-300x225.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" /><img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-4-1-300x225.jpg" className="show-on-hover absolute fill hide-for-small back-image" />				</a>
-                          </div>
-                          <div className="image-tools is-small top right show-on-hover">
-                          </div>
-                          <div className="image-tools is-small hide-for-small bottom left show-on-hover">
-                          </div>
-                          <div className="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-                          </div>
-                        </div>{/* box-image */}
-                        <div className="box-text box-text-products text-center grid-style-2">
-                          <div className="title-wrapper"><p className="name product-title"><a href="http://mauweb.monamedia.net/converse/san-pham/chuck-taylor-classic-13/">Chuck Taylor Classic</a></p></div><div className="price-wrapper">
-                            <span className="price"><span className="woocommerce-Price-amount amount">1,250,000&nbsp;<span className="woocommerce-Price-currencySymbol">₫</span></span></span>
-                          </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=904" rel="nofollow" data-product_id={904} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
-                      </div>{/* box */}
-                    </div>{/* .col-inner */}
-                  </div>
-                  <div className="product-small col has-hover post-903 product type-product status-publish has-post-thumbnail product_cat-classic-nu product_cat-nu last instock shipping-taxable purchasable product-type-simple" aria-selected="false" style={{ position: 'absolute', left: '40%' }}>
-                    <div className="col-inner">
-                      <div className="badge-container absolute left top z-1">
-                      </div>
-                      <div className="product-small box ">
-                        <div className="box-image">
-                          <div className="image-fade_in_back">
-                            <a href="http://mauweb.monamedia.net/converse/san-pham/chuck-taylor-classic-12/">
-                              <img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-5-300x225.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" /><img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-5-1-300x225.jpg" className="show-on-hover absolute fill hide-for-small back-image" />				</a>
-                          </div>
-                          <div className="image-tools is-small top right show-on-hover">
-                          </div>
-                          <div className="image-tools is-small hide-for-small bottom left show-on-hover">
-                          </div>
-                          <div className="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-                          </div>
-                        </div>{/* box-image */}
-                        <div className="box-text box-text-products text-center grid-style-2">
-                          <div className="title-wrapper"><p className="name product-title"><a href="http://mauweb.monamedia.net/converse/san-pham/chuck-taylor-classic-12/">Chuck Taylor Classic</a></p></div><div className="price-wrapper">
-                            <span className="price"><span className="woocommerce-Price-amount amount">1,250,000&nbsp;<span className="woocommerce-Price-currencySymbol">₫</span></span></span>
-                          </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=903" rel="nofollow" data-product_id={903} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
-                      </div>{/* box */}
-                    </div>{/* .col-inner */}
-                  </div>
-                  <div className="product-small col has-hover post-916 product type-product status-publish has-post-thumbnail product_cat-nu product_cat-sunbaked-nu first instock shipping-taxable purchasable product-type-simple" aria-selected="false" style={{ position: 'absolute', left: '60%' }}>
-                    <div className="col-inner">
-                      <div className="badge-container absolute left top z-1">
-                      </div>
-                      <div className="product-small box ">
-                        <div className="box-image">
-                          <div className="image-fade_in_back">
-                            <a href="http://mauweb.monamedia.net/converse/san-pham/one-star-sunbaked-5/">
-                              <img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-sunbaked-4-300x225.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" /><img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-sunbaked-4-1-300x225.jpg" className="show-on-hover absolute fill hide-for-small back-image" />				</a>
-                          </div>
-                          <div className="image-tools is-small top right show-on-hover">
-                          </div>
-                          <div className="image-tools is-small hide-for-small bottom left show-on-hover">
-                          </div>
-                          <div className="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-                          </div>
-                        </div>{/* box-image */}
-                        <div className="box-text box-text-products text-center grid-style-2">
-                          <div className="title-wrapper"><p className="name product-title"><a href="http://mauweb.monamedia.net/converse/san-pham/one-star-sunbaked-5/">One Star Sunbaked</a></p></div><div className="price-wrapper">
-                            <span className="price"><span className="woocommerce-Price-amount amount">1,600,000&nbsp;<span className="woocommerce-Price-currencySymbol">₫</span></span></span>
-                          </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=916" rel="nofollow" data-product_id={916} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
-                      </div>{/* box */}
-                    </div>{/* .col-inner */}
-                  </div>
-                  <div className="product-small col has-hover post-923 product type-product status-publish has-post-thumbnail product_cat-nu product_cat-psy-kicks-nu instock shipping-taxable purchasable product-type-simple" aria-selected="false" style={{ position: 'absolute', left: '80%' }}>
-                    <div className="col-inner">
-                      <div className="badge-container absolute left top z-1">
-                      </div>
-                      <div className="product-small box ">
-                        <div className="box-image">
-                          <div className="image-fade_in_back">
-                            <a href="http://mauweb.monamedia.net/converse/san-pham/chuck-70-psy-kicks-ox-4/">
-                              <img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/men-psy-1-300x225.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" /><img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-psy-1-1-300x225.jpg" className="show-on-hover absolute fill hide-for-small back-image" />				</a>
-                          </div>
-                          <div className="image-tools is-small top right show-on-hover">
-                          </div>
-                          <div className="image-tools is-small hide-for-small bottom left show-on-hover">
-                          </div>
-                          <div className="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-                          </div>
-                        </div>{/* box-image */}
-                        <div className="box-text box-text-products text-center grid-style-2">
-                          <div className="title-wrapper"><p className="name product-title"><a href="http://mauweb.monamedia.net/converse/san-pham/chuck-70-psy-kicks-ox-4/">Chuck 70 Psy-Kicks Ox</a></p></div><div className="price-wrapper">
-                            <span className="price"><span className="woocommerce-Price-amount amount">2,800,000&nbsp;<span className="woocommerce-Price-currencySymbol">₫</span></span></span>
-                          </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=923" rel="nofollow" data-product_id={923} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
-                      </div>{/* box */}
-                    </div>{/* .col-inner */}
-                  </div>
-                  <div className="product-small col has-hover post-902 product type-product status-publish has-post-thumbnail product_cat-classic-nu product_cat-nu instock shipping-taxable purchasable product-type-simple is-selected" aria-selected="true" style={{ position: 'absolute', left: '100%' }}>
-                    <div className="col-inner">
-                      <div className="badge-container absolute left top z-1">
-                      </div>
-                      <div className="product-small box ">
-                        <div className="box-image">
-                          <div className="image-fade_in_back">
-                            <a href="http://mauweb.monamedia.net/converse/san-pham/chuck-taylor-classic-11/">
-                              <img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-6-300x225.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" /><img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-6-1-300x225.jpg" className="show-on-hover absolute fill hide-for-small back-image" />				</a>
-                          </div>
-                          <div className="image-tools is-small top right show-on-hover">
-                          </div>
-                          <div className="image-tools is-small hide-for-small bottom left show-on-hover">
-                          </div>
-                          <div className="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-                          </div>
-                        </div>{/* box-image */}
-                        <div className="box-text box-text-products text-center grid-style-2">
-                          <div className="title-wrapper"><p className="name product-title"><a href="http://mauweb.monamedia.net/converse/san-pham/chuck-taylor-classic-11/">Chuck Taylor Classic</a></p></div><div className="price-wrapper">
-                            <span className="price"><span className="woocommerce-Price-amount amount">1,250,000&nbsp;<span className="woocommerce-Price-currencySymbol">₫</span></span></span>
-                          </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=902" rel="nofollow" data-product_id={902} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
-                      </div>{/* box */}
-                    </div>{/* .col-inner */}
-                  </div>
-                  <div className="product-small col has-hover post-901 product type-product status-publish has-post-thumbnail product_cat-classic-nu product_cat-nu last instock shipping-taxable purchasable product-type-simple is-selected" aria-selected="true" style={{ position: 'absolute', left: '120%' }}>
-                    <div className="col-inner">
-                      <div className="badge-container absolute left top z-1">
-                      </div>
-                      <div className="product-small box ">
-                        <div className="box-image">
-                          <div className="image-fade_in_back">
-                            <a href="http://mauweb.monamedia.net/converse/san-pham/chuck-taylor-classic-10/">
-                              <img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-7-300x225.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" /><img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-7-1-300x225.jpg" className="show-on-hover absolute fill hide-for-small back-image" />				</a>
-                          </div>
-                          <div className="image-tools is-small top right show-on-hover">
-                          </div>
-                          <div className="image-tools is-small hide-for-small bottom left show-on-hover">
-                          </div>
-                          <div className="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-                          </div>
-                        </div>{/* box-image */}
-                        <div className="box-text box-text-products text-center grid-style-2">
-                          <div className="title-wrapper"><p className="name product-title"><a href="http://mauweb.monamedia.net/converse/san-pham/chuck-taylor-classic-10/">Chuck Taylor Classic</a></p></div><div className="price-wrapper">
-                            <span className="price"><span className="woocommerce-Price-amount amount">1,250,000&nbsp;<span className="woocommerce-Price-currencySymbol">₫</span></span></span>
-                          </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=901" rel="nofollow" data-product_id={901} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
-                      </div>{/* box */}
-                    </div>{/* .col-inner */}
-                  </div>
-                  <div className="product-small col has-hover post-922 product type-product status-publish has-post-thumbnail product_cat-nu product_cat-psy-kicks-nu first instock shipping-taxable purchasable product-type-simple is-selected" aria-selected="true" style={{ position: 'absolute', left: '140%' }}>
-                    <div className="col-inner">
-                      <div className="badge-container absolute left top z-1">
-                      </div>
-                      <div className="product-small box ">
-                        <div className="box-image">
-                          <div className="image-fade_in_back">
-                            <a href="http://mauweb.monamedia.net/converse/san-pham/chuck-70-psy-kicks-ox-3/">
-                              <img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-psy-2-300x225.jpg" className="attachment-woocommerce_thumbnail size-woocommerce_thumbnail" /><img width={300} height={225} src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-psy-2-1-300x225.jpg" className="show-on-hover absolute fill hide-for-small back-image" />				</a>
-                          </div>
-                          <div className="image-tools is-small top right show-on-hover">
-                          </div>
-                          <div className="image-tools is-small hide-for-small bottom left show-on-hover">
-                          </div>
-                          <div className="image-tools grid-tools text-center hide-for-small bottom hover-slide-in show-on-hover">
-                          </div>
-                        </div>{/* box-image */}
-                        <div className="box-text box-text-products text-center grid-style-2">
-                          <div className="title-wrapper"><p className="name product-title"><a href="http://mauweb.monamedia.net/converse/san-pham/chuck-70-psy-kicks-ox-3/">Chuck 70 Psy-Kicks Ox</a></p></div><div className="price-wrapper">
-                            <span className="price"><span className="woocommerce-Price-amount amount">1,800,000&nbsp;<span className="woocommerce-Price-currencySymbol">₫</span></span></span>
-                          </div><div className="add-to-cart-button"><a href="/converse/san-pham/chuck-taylor-all-star-70-full-gator-hi-2/?add-to-cart=922" rel="nofollow" data-product_id={922} className="ajax_add_to_cart add_to_cart_button product_type_simple button primary is-flat mb-0 is-small">Thêm vào giỏ</a></div>		</div>{/* box-text */}
-                      </div>{/* box */}
-                    </div>{/* .col-inner */}
-                  </div>
-                </div>
+                                    <button className='title'>Chuck Taylor Classic</button>
+                                    <p className='price'>1,250,000 ₫</p>
+                                    <button className='Xemproduct'>Xem Sản Phẩm</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="boxproduct  text-center">
+                                    <div className="flex justify-center"><img className="" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-1.jpg" alt="" /></div>
+
+                                    <button className='title'>Chuck Taylor Classic</button>
+                                    <p className='price'>1,350,000 ₫</p>
+                                    <button className='Xemproduct'>Xem Sản Phẩm</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="boxproduct  text-center">
+                                    <div className="flex justify-center"><img className="" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-1.jpg" alt="" /></div>
+
+                                    <button className='title'>Chuck Taylor Classic</button>
+                                    <p className='price'>1,450,000 ₫</p>
+                                    <button className='Xemproduct'>Xem Sản Phẩm</button>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="boxproduct  text-center">
+                                    <div className="flex justify-center"><img className="" src="http://mauweb.monamedia.net/converse/wp-content/uploads/2019/05/women-classic-1.jpg" alt="" /></div>
+
+                                    <button className='title'>Chuck Taylor Classic</button>
+                                    <p className='price'>1,550,000 ₫</p>
+                                    <button className='Xemproduct'>Xem Sản Phẩm</button>
+                                </div>
+                            </div>
+                        </Slider>
+                    </div>
                 </div>
               </div>
-            </div>
-
           </div>{/* container */}
         </div>{/* product-footer */}
-      </div>
-
-
-
     </>
   )
 }

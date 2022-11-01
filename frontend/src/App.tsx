@@ -15,7 +15,7 @@ import { listUser } from './api/User';
 import { listCategory } from './api/Categories';
 import Cart from './pages/Website/Cart/Cart';
 import Pay from './pages/Website/Pay/Pay';
-import AdminLayout from './pages/Layout/AdminLayout';
+
 import Categories from './pages/admin/Categories/Categories';
 import CategoriesAdd from './pages/admin/Categories/CategoriesAdd';
 import CategoriesEdit from './pages/admin/Categories/CategoriesEdit';
@@ -23,7 +23,7 @@ import Users from './pages/admin/User/User';
 import UserAdd from './pages/admin/User/UserAdd';
 import UserEdit from './pages/admin/User/UserEdit';
 import ErrorsWeb from './pages/404/errorsWeb';
-import DetailProduct from './pages/detailProduct';
+import DetailProduct from './pages/detail/detailProduct';
 import Blog from './pages/admin/Blog/Blog';
 import BlogAdd from './pages/admin/Blog/BlogAdd';
 import BlogEdit from './pages/admin/Blog/BlogEdit';
@@ -34,6 +34,7 @@ import ListProduct from './pages/admin/Product/product';
 import AddProduct from './pages/admin/Product/add';
 import EditProduct from './pages/admin/Product/edit';
 import PrivateRoute from './midlerware/PrivateRoute';
+import AdminLayout from './Layout/AdminLayout';
 
 function App() {
   const [user, setUser] = useState<IUsers[]>([])
