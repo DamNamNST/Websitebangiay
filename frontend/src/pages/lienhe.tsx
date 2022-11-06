@@ -117,8 +117,8 @@ const Lienhe = (props: Props) => {
                 <p>Việt anh </p>
               </div>
             </div>{/* .icon-box */}
-            <div className="social-icons follow-icons">
-            <FacebookOutlined style={{fontSize:"30px",padding:"20px"}}/>
+            <div className="social-icons follow-icons ">
+            <FacebookOutlined  style={{fontSize:"30px",padding:"20px"}}/>
             <InstagramOutlined style={{fontSize:"30px"}}/>
             <TwitterOutlined style={{fontSize:"30px",padding:"20px"}}/>
             <WeiboCircleOutlined style={{fontSize:"30px"}}/>
